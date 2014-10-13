@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Barroc_it;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,13 +13,17 @@ namespace Barroc
 {
     public partial class Form1 : Form
     {
+        ConnectionManager conn = new ConnectionManager();
         public Form1()
         {
             InitializeComponent();
+            conn.CloseConnection();
         }
 
         private void Btn_Login_Click(object sender, EventArgs e)
         {
+
+            
             //using (ConnectionManager Conn = new ConnectionManager())
             //{
             //    Conn.openConnection();

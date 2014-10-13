@@ -32,16 +32,20 @@ namespace Barroc
             cmd.Parameters.AddWithValue("@FAX", fax_txt.Text);
             cmd.Parameters.AddWithValue("@EMAIL", Email_txt.Text);
             cmd.Connection.Open();
-            try
-            {
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("update Succesful");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            cmd.ExecuteNonQuery();
             cmd.Connection.Close();
+
+            Customer customer = new Customer(conn);
+
+            conn.OpenConnection();
+            SqlDataAdapter SQLda = new SqlDataAdapter("SELECT Customer_ID,CustomerName,Adress,Zipcode,Residence,Telephone_number,Fax_number,Email FROM Customer", conn.GetConnection());
+
+            DataTable dt = new DataTable();
+            SQLda.Fill(dt);
+
+            customer.Customer_grid.DataSource = dt;
+            conn.CloseConnection();
+            this.Close();
         }
     }
 }

@@ -21,6 +21,7 @@ namespace Barroc
 
         private void appointment_btn_Click(object sender, EventArgs e)
         {
+            conn.CloseConnection();
             Appointment appointment = new Appointment(conn);
             appointment.Show();
             this.Hide();
@@ -28,6 +29,7 @@ namespace Barroc
 
         private void Managecustomer_btn_Click(object sender, EventArgs e)
         {
+            conn.CloseConnection();
             Customer customer = new Customer(conn);
             customer.Show();
             this.Hide();

@@ -58,6 +58,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView Customer_grid;
+        public System.Windows.Forms.DataGridView Customer_grid;
+
     }
 }
