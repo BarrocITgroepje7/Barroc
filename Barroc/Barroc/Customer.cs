@@ -45,6 +45,7 @@ namespace Barroc
             form.faxnumber_txt.Text = Customer_grid.Rows[update].Cells[6].Value.ToString();
             form.email.Text = Customer_grid.Rows[update].Cells[7].Value.ToString();
             form.ShowDialog();
+            this.Close();
         }
     }
 }
