@@ -47,5 +47,16 @@ namespace Barroc
             form.ShowDialog();
             this.Close();
         }
+
+        private void btn_invisible_Click(object sender, EventArgs e)
+        {
+            DataGridViewRow row = Customer_grid.SelectedRows[0];
+            string id = row.Cells[0].Value.ToString();
+
+            SqlCommand SQLda = new SqlCommand("DELETE FROM Customer WHERE Customer_id=" + id, conn.GetConnection());
+            SQLda.Connection.Open();
+            SQLda.ExecuteNonQuery();
+            SQLda.Connection.Close();
+        }
     }
 }
