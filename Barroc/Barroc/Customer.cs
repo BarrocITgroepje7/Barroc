@@ -41,9 +41,15 @@ namespace Barroc
             form.Adress_txt.Text = Customer_grid.Rows[update].Cells[2].Value.ToString();
             form.Zipcode_txt.Text = Customer_grid.Rows[update].Cells[3].Value.ToString();
             form.Residence.Text = Customer_grid.Rows[update].Cells[4].Value.ToString();
-            form.tele_txt.Text = Customer_grid.Rows[update].Cells[6].Value.ToString();
-            form.faxnumber_txt.Text = Customer_grid.Rows[update].Cells[7].Value.ToString();
-            form.email.Text = Customer_grid.Rows[update].Cells[8].Value.ToString();
+            form.txt_secondadress.Text = Customer_grid.Rows[update].Cells[5].Value.ToString();
+            form.txt_secondzipcode.Text = Customer_grid.Rows[update].Cells[6].Value.ToString();
+            form.txt_secondresidence.Text = Customer_grid.Rows[update].Cells[7].Value.ToString();
+            form.txt_contactperson.Text = Customer_grid.Rows[update].Cells[8].Value.ToString();
+            form.txt_initials.Text = Customer_grid.Rows[update].Cells[9].Value.ToString();
+            form.tele_txt.Text = Customer_grid.Rows[update].Cells[10].Value.ToString();
+            form.txt_secondtelephonenumber.Text = Customer_grid.Rows[update].Cells[11].Value.ToString();
+            form.faxnumber_txt.Text = Customer_grid.Rows[update].Cells[12].Value.ToString();
+            form.email.Text = Customer_grid.Rows[update].Cells[13].Value.ToString();
             form.ShowDialog();
             this.Close();
         }
@@ -58,7 +64,7 @@ namespace Barroc
             SQLda.ExecuteNonQuery();
             SQLda.Connection.Close();
 
-            SqlDataAdapter SQLs = new SqlDataAdapter("SELECT * FROM Customer", conn.GetConnection());
+            SqlDataAdapter SQLs = new SqlDataAdapter("SELECT Customer_ID,CustomerName,Adress,Zipcode,Residence,Second_Adress,Second_Zipcode,Seconde_Residence,Contactperson,Initials,Telephone_number,Second_Telephone_Number,Fax_number,Email FROM Customer", conn.GetConnection());
 
             DataTable dt = new DataTable();
             SQLs.Fill(dt);
@@ -123,7 +129,7 @@ namespace Barroc
 
             conn.OpenConnection();
 
-            SqlDataAdapter SQLda = new SqlDataAdapter("SELECT * FROM Customer", conn.GetConnection());
+            SqlDataAdapter SQLda = new SqlDataAdapter("SELECT Customer_ID,CustomerName,Adress,Zipcode,Residence,Second_Adress,Second_Zipcode,Seconde_Residence,Contactperson,Initials,Telephone_number,Second_Telephone_Number,Fax_number,Email FROM Customer", conn.GetConnection());
 
             DataTable dt = new DataTable();
             SQLda.Fill(dt);
