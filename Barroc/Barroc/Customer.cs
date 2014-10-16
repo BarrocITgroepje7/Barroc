@@ -15,7 +15,7 @@ namespace Barroc
     public partial class Customer : Form
     {
         ConnectionManager conn = new ConnectionManager();
-        showcustomer form = new showcustomer();
+        showcustomer form;
         public Customer(ConnectionManager conn)
         {
             InitializeComponent();
@@ -36,6 +36,11 @@ namespace Barroc
         {
             int update;
             update = Customer_grid.CurrentRow.Index;
+
+            DataGridViewRow row = Customer_grid.SelectedRows[0];
+            string id = row.Cells[0].Value.ToString();
+
+            form = new showcustomer(id);
 
             form.CustomerName_txt.Text = Customer_grid.Rows[update].Cells[1].Value.ToString();
             form.Adress_txt.Text = Customer_grid.Rows[update].Cells[2].Value.ToString();
