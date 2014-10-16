@@ -21,6 +21,7 @@ namespace Barroc
             InitializeComponent();
             this.conn = conn;
             conn.OpenConnection();
+            btn_back.Visible = false;
 
             SqlDataAdapter SQLda = new SqlDataAdapter("SELECT Customer_ID,CustomerName,Adress,Zipcode,Residence,Telephone_number,Fax_number,Email FROM Customer", conn.GetConnection());
 
@@ -57,6 +58,27 @@ namespace Barroc
             SQLda.Connection.Open();
             SQLda.ExecuteNonQuery();
             SQLda.Connection.Close();
+        }
+
+        private void btn_add_Click(object sender, EventArgs e)
+        {
+            this.Size = new Size(1286, 315);
+            btn_add.Visible = false;
+            btn_back.Visible = true;
+        }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            this.Size = new Size(650, 315);
+            btn_add.Visible = true;
+            btn_back.Visible = false;
+        }
+
+        private void back_btn_Click(object sender, EventArgs e)
+        {
+            Sales sales = new Sales();
+            sales.Show();
+            this.Hide();
         }
     }
 }

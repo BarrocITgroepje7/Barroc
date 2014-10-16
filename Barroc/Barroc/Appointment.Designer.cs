@@ -44,6 +44,7 @@
             this.Add_btn = new System.Windows.Forms.Button();
             this.Appointment_grid = new System.Windows.Forms.DataGridView();
             this.back_btn = new System.Windows.Forms.Button();
+            this.btn_back = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Appointment_grid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -181,11 +182,22 @@
             this.back_btn.UseVisualStyleBackColor = true;
             this.back_btn.Click += new System.EventHandler(this.back_btn_Click);
             // 
+            // btn_back
+            // 
+            this.btn_back.Location = new System.Drawing.Point(13, 219);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(75, 23);
+            this.btn_back.TabIndex = 32;
+            this.btn_back.Text = "Back";
+            this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
+            // 
             // Appointment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(637, 262);
+            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -228,5 +240,6 @@
         private System.Windows.Forms.Button Add_btn;
         private System.Windows.Forms.DataGridView Appointment_grid;
         private System.Windows.Forms.Button back_btn;
+        private System.Windows.Forms.Button btn_back;
     }
 }

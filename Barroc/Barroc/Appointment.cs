@@ -21,8 +21,6 @@ namespace Barroc
             this.conn = conn;
             back_btn.Visible = false;
 
-
-
             conn.OpenConnection();
 
             SqlDataAdapter SQLda = new SqlDataAdapter("SELECT * FROM Appointments", conn.GetConnection());
@@ -72,6 +70,13 @@ namespace Barroc
             back_btn.Visible = false;
             Add_btn.Visible = true;
             this.Size = new Size(650, 315);
+        }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            Sales sales = new Sales();
+            sales.Show();
+            this.Hide();
         }
     }
 }
