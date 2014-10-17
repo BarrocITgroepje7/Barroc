@@ -25,8 +25,6 @@ namespace Barroc
 
         private void Save_btn_Click(object sender, EventArgs e)
         {
-            
-
             string sqlupdate = "Update [Customer] Set [CustomerName] = @CustomerName,[Adress] = @Adress,[Zipcode] = @Zipcode,[Residence] = @Residence,[Second_Adress] = @Second_Adress,[Second_Zipcode] = @Second_Zipcode,[Seconde_Residence] = @Seconde_Residence,[Contactperson] = @Contactperson,[Initials] = @Initials,[Telephone_number] = @TELEPHONE,[Second_Telephone_Number] = @Second_Telephone_Number,[Fax_number] = @FAX,[Email] = @EMAIL WHERE Customer_ID="+customer_id;
             SqlCommand cmd = new SqlCommand(sqlupdate, conn.GetConnection());
             cmd.Parameters.AddWithValue("@CustomerName", CustomerName_txt.Text);

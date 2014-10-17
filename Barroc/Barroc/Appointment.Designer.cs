@@ -45,6 +45,7 @@
             this.Appointment_grid = new System.Windows.Forms.DataGridView();
             this.back_btn = new System.Windows.Forms.Button();
             this.btn_back = new System.Windows.Forms.Button();
+            this.btn_delete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Appointment_grid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -169,8 +170,10 @@
             this.Appointment_grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Appointment_grid.Location = new System.Drawing.Point(12, 12);
             this.Appointment_grid.Name = "Appointment_grid";
+            this.Appointment_grid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Appointment_grid.Size = new System.Drawing.Size(553, 180);
             this.Appointment_grid.TabIndex = 16;
+            this.Appointment_grid.DoubleClick += new System.EventHandler(this.Appointment_grid_DoubleClick);
             // 
             // back_btn
             // 
@@ -184,19 +187,31 @@
             // 
             // btn_back
             // 
-            this.btn_back.Location = new System.Drawing.Point(13, 219);
+            this.btn_back.Location = new System.Drawing.Point(12, 213);
             this.btn_back.Name = "btn_back";
-            this.btn_back.Size = new System.Drawing.Size(75, 23);
+            this.btn_back.Size = new System.Drawing.Size(95, 37);
             this.btn_back.TabIndex = 32;
             this.btn_back.Text = "Back";
             this.btn_back.UseVisualStyleBackColor = true;
             this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
+            // btn_delete
+            // 
+            this.btn_delete.Location = new System.Drawing.Point(530, 213);
+            this.btn_delete.Name = "btn_delete";
+            this.btn_delete.Size = new System.Drawing.Size(95, 37);
+            this.btn_delete.TabIndex = 33;
+            this.btn_delete.Text = "Delete";
+            this.btn_delete.UseVisualStyleBackColor = true;
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
+            // 
             // Appointment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(637, 262);
+            this.Controls.Add(this.btn_delete);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -241,5 +256,6 @@
         private System.Windows.Forms.DataGridView Appointment_grid;
         private System.Windows.Forms.Button back_btn;
         private System.Windows.Forms.Button btn_back;
+        private System.Windows.Forms.Button btn_delete;
     }
 }

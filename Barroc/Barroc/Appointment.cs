@@ -14,7 +14,8 @@ namespace Barroc
 {
     public partial class Appointment : Form
     {
-        private ConnectionManager conn;
+        ConnectionManager conn = new ConnectionManager();
+        showappointment showappointment;
         public Appointment(ConnectionManager conn)
         {
             InitializeComponent();
@@ -34,7 +35,7 @@ namespace Barroc
 
         private void Add_btn_Click(object sender, EventArgs e)
         {
-            this.Size = new Size(837, 315);
+            this.Size = new Size(860, 315);
             Add_btn.Visible = false;
             back_btn.Visible = true;
         }
@@ -77,6 +78,43 @@ namespace Barroc
             Sales sales = new Sales();
             sales.Show();
             this.Hide();
+        }
+
+        private void Appointment_grid_DoubleClick(object sender, EventArgs e)
+        {
+            int update;
+            update = Appointment_grid.CurrentRow.Index;
+
+            DataGridViewRow row = Appointment_grid.SelectedRows[0];
+            string id = row.Cells[0].Value.ToString();
+
+            showappointment = new showappointment(id);
+
+            showappointment.txt_datofaction.Text = Appointment_grid.Rows[update].Cells[2].Value.ToString();
+            showappointment.txt_lastcontact.Text = Appointment_grid.Rows[update].Cells[3].Value.ToString();
+            showappointment.txt_nextcontact.Text = Appointment_grid.Rows[update].Cells[4].Value.ToString();
+            showappointment.txt_subject.Text = Appointment_grid.Rows[update].Cells[5].Value.ToString();
+            showappointment.ShowDialog();
+            this.Close();
+        }
+
+        private void btn_delete_Click(object sender, EventArgs e)
+        {
+            DataGridViewRow row = Appointment_grid.SelectedRows[0];
+            string id = row.Cells[0].Value.ToString();
+
+            SqlCommand SQLda = new SqlCommand("DELETE FROM Appointments WHERE Appointments_id=" + id, conn.GetConnection());
+            SQLda.Connection.Open();
+            SQLda.ExecuteNonQuery();
+            SQLda.Connection.Close();
+
+            SqlDataAdapter SQLs = new SqlDataAdapter("SELECT Appointments_id, Customer_id, Date_of_Action, Last_contact, Next_Action, Subject FROM Appointments", conn.GetConnection());
+
+            DataTable dt = new DataTable();
+            SQLs.Fill(dt);
+
+            Appointment_grid.DataSource = dt;
+            conn.CloseConnection();
         }
     }
 }

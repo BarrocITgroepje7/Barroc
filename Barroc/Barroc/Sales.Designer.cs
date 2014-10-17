@@ -29,32 +29,21 @@
         private void InitializeComponent()
         {
             this.appointment_btn = new System.Windows.Forms.Button();
-            this.Deletecustomer = new System.Windows.Forms.Button();
             this.Manageproject_btn = new System.Windows.Forms.Button();
             this.Managecustomer_btn = new System.Windows.Forms.Button();
-            this.Createcustomer_btn = new System.Windows.Forms.Button();
             this.Logout_btn = new System.Windows.Forms.Button();
             this.Welkom_lbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // appointment_btn
             // 
-            this.appointment_btn.Location = new System.Drawing.Point(16, 135);
+            this.appointment_btn.Location = new System.Drawing.Point(169, 134);
             this.appointment_btn.Name = "appointment_btn";
-            this.appointment_btn.Size = new System.Drawing.Size(81, 37);
+            this.appointment_btn.Size = new System.Drawing.Size(95, 37);
             this.appointment_btn.TabIndex = 13;
             this.appointment_btn.Text = "Appointment";
             this.appointment_btn.UseVisualStyleBackColor = true;
             this.appointment_btn.Click += new System.EventHandler(this.appointment_btn_Click);
-            // 
-            // Deletecustomer
-            // 
-            this.Deletecustomer.Location = new System.Drawing.Point(337, 135);
-            this.Deletecustomer.Name = "Deletecustomer";
-            this.Deletecustomer.Size = new System.Drawing.Size(95, 37);
-            this.Deletecustomer.TabIndex = 12;
-            this.Deletecustomer.Text = "Delete customer";
-            this.Deletecustomer.UseVisualStyleBackColor = true;
             // 
             // Manageproject_btn
             // 
@@ -67,22 +56,13 @@
             // 
             // Managecustomer_btn
             // 
-            this.Managecustomer_btn.Location = new System.Drawing.Point(165, 135);
+            this.Managecustomer_btn.Location = new System.Drawing.Point(169, 53);
             this.Managecustomer_btn.Name = "Managecustomer_btn";
             this.Managecustomer_btn.Size = new System.Drawing.Size(95, 37);
             this.Managecustomer_btn.TabIndex = 10;
-            this.Managecustomer_btn.Text = "Manage customer";
+            this.Managecustomer_btn.Text = "Cutomers";
             this.Managecustomer_btn.UseVisualStyleBackColor = true;
             this.Managecustomer_btn.Click += new System.EventHandler(this.Managecustomer_btn_Click);
-            // 
-            // Createcustomer_btn
-            // 
-            this.Createcustomer_btn.Location = new System.Drawing.Point(165, 53);
-            this.Createcustomer_btn.Name = "Createcustomer_btn";
-            this.Createcustomer_btn.Size = new System.Drawing.Size(95, 37);
-            this.Createcustomer_btn.TabIndex = 9;
-            this.Createcustomer_btn.Text = "Create customer";
-            this.Createcustomer_btn.UseVisualStyleBackColor = true;
             // 
             // Logout_btn
             // 
@@ -92,6 +72,7 @@
             this.Logout_btn.TabIndex = 8;
             this.Logout_btn.Text = "Log out";
             this.Logout_btn.UseVisualStyleBackColor = true;
+            this.Logout_btn.Click += new System.EventHandler(this.Logout_btn_Click);
             // 
             // Welkom_lbl
             // 
@@ -110,10 +91,8 @@
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(454, 203);
             this.Controls.Add(this.appointment_btn);
-            this.Controls.Add(this.Deletecustomer);
             this.Controls.Add(this.Manageproject_btn);
             this.Controls.Add(this.Managecustomer_btn);
-            this.Controls.Add(this.Createcustomer_btn);
             this.Controls.Add(this.Logout_btn);
             this.Controls.Add(this.Welkom_lbl);
             this.Name = "Sales";
@@ -126,10 +105,8 @@
         #endregion
 
         private System.Windows.Forms.Button appointment_btn;
-        private System.Windows.Forms.Button Deletecustomer;
         private System.Windows.Forms.Button Manageproject_btn;
         private System.Windows.Forms.Button Managecustomer_btn;
-        private System.Windows.Forms.Button Createcustomer_btn;
         private System.Windows.Forms.Button Logout_btn;
         private System.Windows.Forms.Label Welkom_lbl;
     }
