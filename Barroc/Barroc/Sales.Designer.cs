@@ -97,6 +97,7 @@
             this.Controls.Add(this.Welkom_lbl);
             this.Name = "Sales";
             this.Text = "Sales";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Sales_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

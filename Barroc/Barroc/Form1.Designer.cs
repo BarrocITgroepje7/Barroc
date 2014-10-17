@@ -102,7 +102,7 @@
             this.Controls.Add(this.Password_txt);
             this.Controls.Add(this.Btn_Login);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Barroc-IT Login";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -35,11 +35,17 @@ namespace Barroc
             this.Hide();
         }
 
+<<<<<<< HEAD
         private void Logout_btn_Click(object sender, EventArgs e)
         {
             Form1 form1 = new Form1();
             form1.Show();
             this.Hide();
+=======
+        private void Sales_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+>>>>>>> origin/master
         }
     }
 }
