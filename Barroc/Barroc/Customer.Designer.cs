@@ -392,6 +392,7 @@
             this.Controls.Add(this.btn_back);
             this.Name = "Customer";
             this.Text = "Customer";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Customer_FormClosing);
             this.Load += new System.EventHandler(this.Customer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Customer_grid)).EndInit();
             this.ResumeLayout(false);

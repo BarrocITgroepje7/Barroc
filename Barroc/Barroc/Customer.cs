@@ -142,5 +142,10 @@ namespace Barroc
             Customer_grid.DataSource = dt;
             conn.CloseConnection();
         }
+
+        private void Customer_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

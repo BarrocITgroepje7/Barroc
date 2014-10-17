@@ -78,5 +78,10 @@ namespace Barroc
             sales.Show();
             this.Hide();
         }
+
+        private void Appointment_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

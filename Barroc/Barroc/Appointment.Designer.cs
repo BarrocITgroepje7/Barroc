@@ -216,6 +216,7 @@
             this.Controls.Add(this.back_btn);
             this.Name = "Appointment";
             this.Text = "Appointment";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Appointment_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.Appointment_grid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

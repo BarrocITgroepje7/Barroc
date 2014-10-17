@@ -34,5 +34,10 @@ namespace Barroc
             customer.Show();
             this.Hide();
         }
+
+        private void Sales_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
