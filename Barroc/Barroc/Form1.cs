@@ -46,13 +46,13 @@ namespace Barroc
                 sales.Show();
                 this.Hide();
             }
-            //else if (Username == "Financien" && Username == Password)
-            //{
-            //    //Ga naar het Finanicen scherm
-            //    Financiën financien = new Financiën();
-            //    financien.Show();
-            //    this.Hide();
-            //}
+            else if (Username == "Financien" && Username == Password)
+            {
+                //Ga naar het Finanicen scherm
+                Finance financien = new Finance();
+                financien.Show();
+                this.Hide();
+            }
             //else if (Username == "Development" && Username == Password)
             //{
             //    //Ga naar het Development scherm
