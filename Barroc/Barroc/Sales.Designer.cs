@@ -53,6 +53,7 @@
             this.Manageproject_btn.TabIndex = 11;
             this.Manageproject_btn.Text = "Manage project";
             this.Manageproject_btn.UseVisualStyleBackColor = true;
+            this.Manageproject_btn.Click += new System.EventHandler(this.Manageproject_btn_Click);
             // 
             // Managecustomer_btn
             // 

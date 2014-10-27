@@ -46,5 +46,12 @@ namespace Barroc
         {
             Application.Exit();
         }
+
+        private void Manageproject_btn_Click(object sender, EventArgs e)
+        {
+            Project project = new Project();
+            project.Show();
+            this.Hide();
+        }
     }
 }
