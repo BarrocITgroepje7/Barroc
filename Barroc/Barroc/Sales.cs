@@ -39,6 +39,7 @@ namespace Barroc
         {
             Form1 form1 = new Form1();
             form1.Show();
+            this.Hide();
         }
 
         private void Sales_FormClosing(object sender, FormClosingEventArgs e)
