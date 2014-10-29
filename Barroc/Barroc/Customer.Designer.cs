@@ -355,7 +355,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(578, 262);
+            this.ClientSize = new System.Drawing.Size(1132, 262);
             this.Controls.Add(this.btn_toevoegen);
             this.Controls.Add(this.txt_secondresidence);
             this.Controls.Add(this.txt_contactperson);

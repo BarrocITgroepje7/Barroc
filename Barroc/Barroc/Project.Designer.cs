@@ -317,7 +317,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(634, 261);
+            this.ClientSize = new System.Drawing.Size(1230, 261);
             this.Controls.Add(this.btn_toevoegen);
             this.Controls.Add(this.txt_numberofinvoices);
             this.Controls.Add(this.txt_enddate);
@@ -349,7 +349,7 @@
             this.Controls.Add(this.Project_grid);
             this.Controls.Add(this.back_btn);
             this.Name = "Project";
-            this.Text = "Project";
+            this.Text = "x";
             ((System.ComponentModel.ISupportInitialize)(this.Project_grid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

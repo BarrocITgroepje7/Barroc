@@ -65,6 +65,30 @@ namespace Barroc
             SqlCommand cmd = new SqlCommand(sql, conn.GetConnection());
             cmd.Parameters.Add(new SqlParameter("@Project_ID", txt_projectid.Text));
             cmd.Parameters.Add(new SqlParameter("@Customer_ID", txt_customerid.Text));
+            cmd.Parameters.Add(new SqlParameter("@Project_name", txt_projectname.Text));
+            cmd.Parameters.Add(new SqlParameter("@Status", txt_status.Text));
+            cmd.Parameters.Add(new SqlParameter("@Applications", txt_applications.Text));
+            cmd.Parameters.Add(new SqlParameter("@Hardware", txt_hardware.Text));
+            cmd.Parameters.Add(new SqlParameter("@Software", txt_software.Text));
+            cmd.Parameters.Add(new SqlParameter("@Offer_number", txt_offernumber.Text));
+            cmd.Parameters.Add(new SqlParameter("@Internal_contact_person", txt_internalcontactperson.Text));
+            cmd.Parameters.Add(new SqlParameter("@Start_date", txt_startdate.Text));
+            cmd.Parameters.Add(new SqlParameter("@End_date", txt_enddate.Text));
+            cmd.Parameters.Add(new SqlParameter("@Nmber_of_invoices", txt_numberofinvoices.Text));
+
+            cmd.Connection.Open();
+            cmd.ExecuteNonQuery();
+            cmd.Connection.Close();
+
+            conn.OpenConnection();
+
+            SqlDataAdapter SQLda = new SqlDataAdapter("SELECT * FROM Projects", conn.GetConnection());
+
+            DataTable dt = new DataTable();
+            SQLda.Fill(dt);
+
+            Project_grid.DataSource = dt;
+            conn.CloseConnection();
 
         }
     }
