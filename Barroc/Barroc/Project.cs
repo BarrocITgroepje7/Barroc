@@ -63,6 +63,8 @@ namespace Barroc
         {
             string sql = "INSERT INTO Projects (Project_ID, Customer_ID, Project_name, Status, Applications, Hardware, Software, Offer_number, Internal_contact_person, Start_date, End_date, Nmber_of_invoices) values (@Project_ID,@Customer_ID,@Project_name,@Status,@Applications,@Hardware,@Software,@Offer_number,@Internal_contact_person,@Start_date,@End_date,@Nmber_of_invoices)";
             SqlCommand cmd = new SqlCommand(sql, conn.GetConnection());
+            cmd.Parameters.Add(new SqlParameter("@Project_ID", txt_projectid.Text));
+            cmd.Parameters.Add(new SqlParameter("@Customer_ID", txt_customerid.Text));
 
         }
     }
