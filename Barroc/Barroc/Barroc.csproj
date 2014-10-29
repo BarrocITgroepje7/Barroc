@@ -84,6 +84,12 @@
     <Compile Include="Finance.Designer.cs">
       <DependentUpon>Finance.cs</DependentUpon>
     </Compile>
+    <Compile Include="financial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="financial.Designer.cs">
+      <DependentUpon>financial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,12 @@
     <Compile Include="showcustomer.Designer.cs">
       <DependentUpon>showcustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Viewproject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viewproject.Designer.cs">
+      <DependentUpon>Viewproject.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Appointment.resx">
       <DependentUpon>Appointment.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Finance.resx">
       <DependentUpon>Finance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="financial.resx">
+      <DependentUpon>financial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -151,6 +166,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="showcustomer.resx">
       <DependentUpon>showcustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewproject.resx">
+      <DependentUpon>Viewproject.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Factuur.xls" />
     <None Include="Properties\Settings.settings">
