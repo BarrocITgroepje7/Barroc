@@ -59,6 +59,7 @@ namespace Barroc
             this.Size = new Size(650, 300);
         }
 
+
         private void btn_toevoegen_Click(object sender, EventArgs e)
         {
             string sql = "INSERT INTO Projects (Project_ID, Customer_ID, Project_name, Status, Applications, Hardware, Software, Offer_number, Internal_contact_person, Start_date, End_date, Nmber_of_invoices) values (@Project_ID,@Customer_ID,@Project_name,@Status,@Applications,@Hardware,@Software,@Offer_number,@Internal_contact_person,@Start_date,@End_date,@Nmber_of_invoices)";
