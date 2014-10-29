@@ -66,6 +66,7 @@
             this.btn_AddProject.TabIndex = 2;
             this.btn_AddProject.Text = "Add Project";
             this.btn_AddProject.UseVisualStyleBackColor = true;
+            this.btn_AddProject.Click += new System.EventHandler(this.btn_AddProject_Click);
             // 
             // btn_ManageProject
             // 
@@ -77,6 +78,7 @@
             this.btn_ManageProject.TabIndex = 3;
             this.btn_ManageProject.Text = "Manage Project";
             this.btn_ManageProject.UseVisualStyleBackColor = true;
+            this.btn_ManageProject.Click += new System.EventHandler(this.btn_ManageProject_Click);
             // 
             // btn_DeleteProject
             // 
@@ -88,6 +90,7 @@
             this.btn_DeleteProject.TabIndex = 4;
             this.btn_DeleteProject.Text = "Delete Project";
             this.btn_DeleteProject.UseVisualStyleBackColor = true;
+            this.btn_DeleteProject.Click += new System.EventHandler(this.btn_DeleteProject_Click);
             // 
             // btn_ViewStatus
             // 
@@ -99,6 +102,7 @@
             this.btn_ViewStatus.TabIndex = 5;
             this.btn_ViewStatus.Text = "View Status";
             this.btn_ViewStatus.UseVisualStyleBackColor = true;
+            this.btn_ViewStatus.Click += new System.EventHandler(this.btn_ViewStatus_Click);
             // 
             // btn_ManageCustomers
             // 
@@ -110,13 +114,14 @@
             this.btn_ManageCustomers.TabIndex = 6;
             this.btn_ManageCustomers.Text = "Manage Customers";
             this.btn_ManageCustomers.UseVisualStyleBackColor = true;
+            this.btn_ManageCustomers.Click += new System.EventHandler(this.btn_ManageCustomers_Click);
             // 
             // Development
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(580, 324);
+            this.ClientSize = new System.Drawing.Size(402, 324);
             this.Controls.Add(this.btn_ManageCustomers);
             this.Controls.Add(this.btn_ViewStatus);
             this.Controls.Add(this.btn_DeleteProject);
