@@ -53,13 +53,13 @@ namespace Barroc
                 financien.Show();
                 this.Hide();
             }
-            //else if (Username == "Development" && Username == Password)
-            //{
-            //    //Ga naar het Development scherm
-            //    Development development = new Development();
-            //    development.Show();
-            //    this.Hide();
-            //}
+            else if (Username == "Development" && Username == Password)
+            {
+                //Ga naar het Development scherm
+                Development development = new Development();
+                development.Show();
+                this.Hide();
+            }
             else
             {
                 MessageBox.Show("You can't login in");

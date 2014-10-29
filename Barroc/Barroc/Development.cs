@@ -16,5 +16,32 @@ namespace Barroc
         {
             InitializeComponent();
         }
+
+        private void btn_AddProject_Click(object sender, EventArgs e)
+        {
+            Project project = new Project();
+            project.Show();
+            this.Hide();
+        }
+
+        private void btn_ManageProject_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_DeleteProject_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_ViewStatus_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_ManageCustomers_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
