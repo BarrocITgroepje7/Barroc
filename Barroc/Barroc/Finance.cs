@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Barroc_it;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,7 @@ namespace Barroc
 {
     public partial class Finance : Form
     {
+        ConnectionManager conn = new ConnectionManager();
         public Finance()
         {
             InitializeComponent();
@@ -24,6 +26,13 @@ namespace Barroc
             xlApp.Visible = true;                               // application becomes visible
             xlApp.Workbooks.Open(@"C:\Users\michael\Documents\GitHub\Barroc\Barroc\Barroc\Factuur.xls");
             xlApp.Application.DisplayFullScreen = true;
+        }
+
+        private void financial_btn_Click(object sender, EventArgs e)
+        {
+            financial financial = new financial(conn);
+            financial.Show();
+            this.Close();
         }
     }
 }
