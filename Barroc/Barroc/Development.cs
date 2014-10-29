@@ -19,7 +19,9 @@ namespace Barroc
 
         private void btn_AddProject_Click(object sender, EventArgs e)
         {
-
+            Project project = new Project();
+            project.Show();
+            this.Hide();
         }
 
         private void btn_ManageProject_Click(object sender, EventArgs e)
