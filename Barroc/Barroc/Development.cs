@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Barroc_it;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +14,7 @@ namespace Barroc
 {
     public partial class Development : Form
     {
+        ConnectionManager conn = new ConnectionManager();
         public Development()
         {
             InitializeComponent();
@@ -19,7 +22,8 @@ namespace Barroc
 
         private void btn_AddProject_Click(object sender, EventArgs e)
         {
-            Project project = new Project();
+            conn.CloseConnection();
+            Project project = new Project(conn);
             project.Show();
             this.Hide();
         }

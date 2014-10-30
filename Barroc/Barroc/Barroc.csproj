@@ -128,6 +128,12 @@
     <Compile Include="showcustomer.Designer.cs">
       <DependentUpon>showcustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="ShowProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowProject.designer.cs">
+      <DependentUpon>ShowProject.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Appointment.resx">
       <DependentUpon>Appointment.cs</DependentUpon>
     </EmbeddedResource>
@@ -169,6 +175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="showcustomer.resx">
       <DependentUpon>showcustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowProject.resx">
+      <DependentUpon>ShowProject.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Factuur.xls" />
     <None Include="Properties\Settings.settings">
