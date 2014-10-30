@@ -47,6 +47,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Creditworthy = new System.Windows.Forms.TextBox();
             this.CHECK = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Balance
@@ -205,12 +207,32 @@
             this.CHECK.Size = new System.Drawing.Size(100, 20);
             this.CHECK.TabIndex = 22;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(220, 76);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(90, 13);
+            this.label9.TabIndex = 23;
+            this.label9.Text = "* Only True/False";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(220, 202);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(90, 13);
+            this.label11.TabIndex = 24;
+            this.label11.Text = "* Only True/False";
+            // 
             // financialADD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(407, 388);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.CHECK);
             this.Controls.Add(this.Creditworthy);
             this.Controls.Add(this.ADD_btn);
@@ -232,6 +254,7 @@
             this.Controls.Add(this.Balance);
             this.Name = "financialADD";
             this.Text = "financialADD";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.financialADD_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -258,5 +281,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox Creditworthy;
         private System.Windows.Forms.TextBox CHECK;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label11;
     }
 }

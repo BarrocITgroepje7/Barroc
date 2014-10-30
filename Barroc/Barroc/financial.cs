@@ -48,5 +48,17 @@ namespace Barroc
             form.ShowDialog();
             this.Close();
         }
+
+        private void Back_Click(object sender, EventArgs e)
+        {
+            Finance financien = new Finance();
+            financien.Show();
+            this.Close();
+        }
+
+        private void financial_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
