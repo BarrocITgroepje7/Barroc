@@ -49,7 +49,9 @@ namespace Barroc
 
         private void Manageproject_btn_Click(object sender, EventArgs e)
         {
-            
+            Viewproject viewroject = new Viewproject();
+            viewroject.Show();
+            this.Hide();
         }
     }
 }
