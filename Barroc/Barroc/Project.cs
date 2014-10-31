@@ -115,5 +115,24 @@ namespace Barroc
             form.ShowDialog();
             this.Close();
         }
+
+        private void btn_delete_Click(object sender, EventArgs e)
+        {
+            DataGridViewRow row = Project_grid.SelectedRows[0];
+            string id = row.Cells[0].Value.ToString();
+
+            SqlCommand SQLda = new SqlCommand("DELETE FROM Projects WHERE Project_id=" + id, conn.GetConnection());
+            SQLda.Connection.Open();
+            SQLda.ExecuteNonQuery();
+            SQLda.Connection.Close();
+
+            SqlDataAdapter SQLs = new SqlDataAdapter("SELECT * FROM Projects", conn.GetConnection());
+
+            DataTable dt = new DataTable();
+            SQLs.Fill(dt);
+
+            Project_grid.DataSource = dt;
+            conn.CloseConnection();
+        }
     }
 }

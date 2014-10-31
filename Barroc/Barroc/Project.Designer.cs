@@ -90,6 +90,7 @@
             this.btn_delete.TabIndex = 2;
             this.btn_delete.Text = "Delete";
             this.btn_delete.UseVisualStyleBackColor = true;
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
             // back_btn
             // 
@@ -318,7 +319,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(1128, 261);
+            this.ClientSize = new System.Drawing.Size(640, 261);
             this.Controls.Add(this.btn_toevoegen);
             this.Controls.Add(this.txt_numberofinvoices);
             this.Controls.Add(this.txt_enddate);
