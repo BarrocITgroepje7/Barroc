@@ -40,7 +40,9 @@ namespace Barroc
 
         private void btn_ViewStatus_Click(object sender, EventArgs e)
         {
-
+            ViewStatus viewstatus = new ViewStatus();
+            viewstatus.Show();
+            this.Hide();
         }
 
         private void btn_ManageCustomers_Click(object sender, EventArgs e)
