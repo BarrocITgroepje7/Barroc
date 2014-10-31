@@ -51,6 +51,7 @@
             this.txt_enddate = new System.Windows.Forms.TextBox();
             this.txt_numberofinvoices = new System.Windows.Forms.TextBox();
             this.btn_save = new System.Windows.Forms.Button();
+            this.btn_back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbl_customerid
@@ -233,13 +234,23 @@
             // 
             this.btn_save.AccessibleDescription = "btn_save";
             this.btn_save.AccessibleName = "btn_save";
-            this.btn_save.Location = new System.Drawing.Point(435, 226);
+            this.btn_save.Location = new System.Drawing.Point(420, 212);
             this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(75, 23);
+            this.btn_save.Size = new System.Drawing.Size(95, 37);
             this.btn_save.TabIndex = 31;
             this.btn_save.Text = "Save";
             this.btn_save.UseVisualStyleBackColor = true;
             this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
+            // 
+            // btn_back
+            // 
+            this.btn_back.Location = new System.Drawing.Point(246, 212);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(95, 37);
+            this.btn_back.TabIndex = 32;
+            this.btn_back.Text = "Back";
+            this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // ShowProject
             // 
@@ -247,6 +258,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(527, 261);
+            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.btn_save);
             this.Controls.Add(this.txt_numberofinvoices);
             this.Controls.Add(this.txt_enddate);
@@ -302,5 +314,6 @@
         public System.Windows.Forms.TextBox txt_enddate;
         public System.Windows.Forms.TextBox txt_numberofinvoices;
         public System.Windows.Forms.Button btn_save;
+        private System.Windows.Forms.Button btn_back;
     }
 }

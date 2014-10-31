@@ -37,6 +37,7 @@
             this.txt_lastcontact = new System.Windows.Forms.TextBox();
             this.txt_datofaction = new System.Windows.Forms.TextBox();
             this.btn_save = new System.Windows.Forms.Button();
+            this.btn_back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label3
@@ -113,12 +114,23 @@
             this.btn_save.UseVisualStyleBackColor = true;
             this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
+            // btn_back
+            // 
+            this.btn_back.Location = new System.Drawing.Point(17, 239);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(95, 37);
+            this.btn_back.TabIndex = 12;
+            this.btn_back.Text = "Back";
+            this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
+            // 
             // showappointment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(372, 288);
+            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.btn_save);
             this.Controls.Add(this.txt_datofaction);
             this.Controls.Add(this.txt_lastcontact);
@@ -147,5 +159,6 @@
         public System.Windows.Forms.TextBox txt_subject;
         public System.Windows.Forms.TextBox txt_lastcontact;
         public System.Windows.Forms.TextBox txt_datofaction;
+        private System.Windows.Forms.Button btn_back;
     }
 }

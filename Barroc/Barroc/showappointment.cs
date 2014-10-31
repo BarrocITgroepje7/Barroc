@@ -43,5 +43,12 @@ namespace Barroc
         {
 
         }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            Appointment appointment = new Appointment(conn);
+            appointment.Show();
+            this.Hide();
+        }
     }
 }

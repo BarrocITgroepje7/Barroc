@@ -50,5 +50,12 @@ namespace Barroc
         {
             this.Size = new Size(575,323);
         }
+
+        private void Back_Click(object sender, EventArgs e)
+        {
+            Finance finance = new Finance();
+            finance.Show();
+            this.Hide();
+        }
     }
 }

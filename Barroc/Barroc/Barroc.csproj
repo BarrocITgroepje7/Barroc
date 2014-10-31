@@ -146,11 +146,23 @@
     <Compile Include="ShowProject.designer.cs">
       <DependentUpon>ShowProject.cs</DependentUpon>
     </Compile>
+    <Compile Include="Viewcustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viewcustomer.Designer.cs">
+      <DependentUpon>Viewcustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Viewproject.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Viewproject.Designer.cs">
       <DependentUpon>Viewproject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Viewstatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Viewstatus.Designer.cs">
+      <DependentUpon>Viewstatus.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Appointment.resx">
       <DependentUpon>Appointment.cs</DependentUpon>
@@ -203,8 +215,14 @@
     <EmbeddedResource Include="ShowProject.resx">
       <DependentUpon>ShowProject.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Viewcustomer.resx">
+      <DependentUpon>Viewcustomer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Viewproject.resx">
       <DependentUpon>Viewproject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Viewstatus.resx">
+      <DependentUpon>Viewstatus.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Factuur.xls" />
     <None Include="Properties\Settings.settings">

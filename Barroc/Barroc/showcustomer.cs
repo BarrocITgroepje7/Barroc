@@ -53,5 +53,12 @@ namespace Barroc
         {
 
         }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            Customer customer = new Customer(conn);
+            customer.Show();
+            this.Close();
+        }
     }
 }
