@@ -70,3 +70,5 @@ C:\Users\Teun\Documents\GitHub\Barroc tweede\Barroc\Barroc\Barroc\obj\Debug\Barr
 C:\Users\Teun\Documents\GitHub\Barroc tweede\Barroc\Barroc\Barroc\obj\Debug\Barroc.ShowProject.resources
 C:\Users\Teun\Documents\GitHub\Barroc tweede\Barroc\Barroc\Barroc\obj\Debug\Barroc.csproj.GenerateResource.Cache
 C:\Users\Teun\Documents\GitHub\Barroc tweede\Barroc\Barroc\Barroc\obj\Debug\Barroc.Viewproject.resources
+C:\Users\michael\Documents\GitHub\Barroc\Barroc\Barroc\obj\Debug\Barroc.ShowProject.resources
+C:\Users\michael\Documents\GitHub\Barroc\Barroc\Barroc\obj\Debug\Barroc.Viewproject.resources
