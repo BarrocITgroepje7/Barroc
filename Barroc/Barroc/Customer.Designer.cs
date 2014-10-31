@@ -62,22 +62,24 @@
             this.txt_contactperson = new System.Windows.Forms.TextBox();
             this.txt_secondresidence = new System.Windows.Forms.TextBox();
             this.btn_toevoegen = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Customer_grid)).BeginInit();
             this.SuspendLayout();
             // 
             // Customer_grid
             // 
             this.Customer_grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Customer_grid.Location = new System.Drawing.Point(12, 12);
+            this.Customer_grid.Location = new System.Drawing.Point(12, 48);
             this.Customer_grid.Name = "Customer_grid";
             this.Customer_grid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Customer_grid.Size = new System.Drawing.Size(470, 181);
+            this.Customer_grid.Size = new System.Drawing.Size(470, 169);
             this.Customer_grid.TabIndex = 1;
             this.Customer_grid.DoubleClick += new System.EventHandler(this.Customer_grid_DoubleClick);
             // 
             // btn_invisible
             // 
-            this.btn_invisible.Location = new System.Drawing.Point(387, 213);
+            this.btn_invisible.Location = new System.Drawing.Point(387, 223);
             this.btn_invisible.Name = "btn_invisible";
             this.btn_invisible.Size = new System.Drawing.Size(95, 37);
             this.btn_invisible.TabIndex = 2;
@@ -107,7 +109,7 @@
             // 
             // back_btn
             // 
-            this.back_btn.Location = new System.Drawing.Point(12, 213);
+            this.back_btn.Location = new System.Drawing.Point(12, 223);
             this.back_btn.Name = "back_btn";
             this.back_btn.Size = new System.Drawing.Size(95, 37);
             this.back_btn.TabIndex = 5;
@@ -350,12 +352,31 @@
             this.btn_toevoegen.UseVisualStyleBackColor = true;
             this.btn_toevoegen.Click += new System.EventHandler(this.btn_toevoegen_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(12, 22);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(470, 20);
+            this.textBox1.TabIndex = 36;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(48, 13);
+            this.label1.TabIndex = 37;
+            this.label1.Text = "* Search";
+            // 
             // Customer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(1028, 262);
+            this.ClientSize = new System.Drawing.Size(571, 262);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btn_toevoegen);
             this.Controls.Add(this.txt_secondresidence);
             this.Controls.Add(this.txt_contactperson);
@@ -435,6 +456,8 @@
         private System.Windows.Forms.TextBox txt_contactperson;
         private System.Windows.Forms.TextBox txt_secondresidence;
         private System.Windows.Forms.Button btn_toevoegen;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
 
     }
 }

@@ -115,5 +115,13 @@ namespace Barroc
             form.ShowDialog();
             this.Close();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            BindingSource bs = new BindingSource();
+            bs.DataSource = Project_grid.DataSource;
+            bs.Filter = "Project_name like '%" + textBox1.Text + "%'";
+            Project_grid.DataSource = bs;
+        }
     }
 }

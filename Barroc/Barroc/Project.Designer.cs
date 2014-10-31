@@ -58,13 +58,15 @@
             this.txt_enddate = new System.Windows.Forms.TextBox();
             this.txt_numberofinvoices = new System.Windows.Forms.TextBox();
             this.btn_toevoegen = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Project_grid)).BeginInit();
             this.SuspendLayout();
             // 
             // Project_grid
             // 
             this.Project_grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Project_grid.Location = new System.Drawing.Point(12, 12);
+            this.Project_grid.Location = new System.Drawing.Point(12, 52);
             this.Project_grid.Name = "Project_grid";
             this.Project_grid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Project_grid.Size = new System.Drawing.Size(553, 180);
@@ -74,7 +76,7 @@
             // 
             // btn_back
             // 
-            this.btn_back.Location = new System.Drawing.Point(12, 213);
+            this.btn_back.Location = new System.Drawing.Point(12, 238);
             this.btn_back.Name = "btn_back";
             this.btn_back.Size = new System.Drawing.Size(95, 37);
             this.btn_back.TabIndex = 1;
@@ -84,7 +86,7 @@
             // 
             // btn_delete
             // 
-            this.btn_delete.Location = new System.Drawing.Point(530, 213);
+            this.btn_delete.Location = new System.Drawing.Point(470, 238);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.Size = new System.Drawing.Size(95, 37);
             this.btn_delete.TabIndex = 2;
@@ -313,12 +315,31 @@
             this.btn_toevoegen.UseVisualStyleBackColor = true;
             this.btn_toevoegen.Click += new System.EventHandler(this.btn_toevoegen_Click);
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(13, 26);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(552, 20);
+            this.textBox1.TabIndex = 32;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(48, 13);
+            this.label1.TabIndex = 33;
+            this.label1.Text = "* Search";
+            // 
             // Project
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(1128, 261);
+            this.ClientSize = new System.Drawing.Size(1128, 276);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btn_toevoegen);
             this.Controls.Add(this.txt_numberofinvoices);
             this.Controls.Add(this.txt_enddate);
@@ -389,5 +410,7 @@
         private System.Windows.Forms.TextBox txt_enddate;
         private System.Windows.Forms.TextBox txt_numberofinvoices;
         private System.Windows.Forms.Button btn_toevoegen;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

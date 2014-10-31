@@ -16,6 +16,8 @@ namespace Barroc
     {
         ConnectionManager conn = new ConnectionManager();
         showcustomer form;
+        DataTable dt = new DataTable();
+        DataSet ds = new DataSet();
         public Customer(ConnectionManager conn)
         {
             InitializeComponent();
@@ -101,7 +103,6 @@ namespace Barroc
 
         private void Customer_Load(object sender, EventArgs e)
         {
-
         }
 
         private void label7_Click(object sender, EventArgs e)
@@ -141,6 +142,14 @@ namespace Barroc
 
             Customer_grid.DataSource = dt;
             conn.CloseConnection();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            BindingSource bs = new BindingSource();
+            bs.DataSource = Customer_grid.DataSource;
+            bs.Filter = "CustomerName like '%" + textBox1.Text + "%'";
+            Customer_grid.DataSource = bs;
         }
     }
 }
