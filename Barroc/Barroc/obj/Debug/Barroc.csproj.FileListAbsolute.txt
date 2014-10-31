@@ -1,0 +1,99 @@
+C:\Users\michael\Documents\GitHub\Barroc\Barroc\Barroc\bin\Debug\Barroc.exe.config
+C:\Users\michael\Documents\GitHub\Barroc\Barroc\Barroc\obj\Debug\Barroc.csprojResolveAssemblyReference.cache
+C:\Users\michael\Documents\GitHub\Barroc\Barroc\Barroc\obj\Debug\Barroc.Appointment.resources
+C:\Users\michael\Documents\GitHub\Barroc\Barroc\Barroc\obj\Debug\Barroc.Form1.resources
+C:\Users\michael\Documents\GitHub\Barroc\Barroc\Barroc\obj\Debug\Barroc.Properties.Resources.resources
+C:\Users\michael\Documents\GitHub\Barroc\Barroc\Barroc\obj\Debug\Barroc.Sales.resources
+C:\Users\michael\Documents\GitHub\Barroc\Barroc\Barroc\obj\Debug\Barroc.csproj.GenerateResource.Cache
+C:\Users\michael\Documents\GitHub\Barroc\Barroc\Barroc\bin\Debug\Barroc-IT.mdf
+C:\Users\michael\Documents\GitHub\Barroc\Barroc\Barroc\bin\Debug\Barroc-IT_log.ldf
+C:\Users\michael\Documents\GitHub\Barroc\Barroc\Barroc\bin\Debug\Barroc.exe
+C:\Users\michael\Documents\GitHub\Barroc\Barroc\Barroc\bin\Debug\Barroc.pdb
+C:\Users\michael\Documents\GitHub\Barroc\Barroc\Barroc\obj\Debug\Barroc.exe
+C:\Users\michael\Documents\GitHub\Barroc\Barroc\Barroc\obj\Debug\Barroc.pdb
+C:\Users\michael\Documents\GitHub\Barroc\Barroc\Barroc\obj\Debug\Barroc.Customer.resources
+C:\Users\michael\Documents\GitHub\Barroc\Barroc\Barroc\obj\Debug\Barroc.showcustomer.resources
+C:\Users\michael\Documents\GitHub\Barroc\Barroc\Barroc\obj\Debug\Barroc.csproj.ResolveComReference.cache
+C:\Users\michael\Documents\GitHub\Barroc\Barroc\Barroc\obj\Debug\Barroc.Finance.resources
+C:\Users\michael\Documents\GitHub\Barroc\Barroc\Barroc\obj\Debug\Barroc.showappointment.resources
+C:\Users\michael\Documents\GitHub\Barroc\Barroc\Barroc\obj\Debug\Barroc.financial.resources
+C:\Users\michael\Documents\GitHub\Barroc\Barroc\Barroc\obj\Debug\Interop.Microsoft.Office.Interop.Excel.dll
+C:\Users\michael\Documents\GitHub\Barroc\Barroc\Barroc\obj\Debug\Barroc.Development.resources
+C:\Users\michael\Documents\GitHub\Barroc\Barroc\Barroc\obj\Debug\Barroc.financialADD.resources
+C:\Users\michael\Documents\GitHub\Barroc\Barroc\Barroc\obj\Debug\Barroc.Project.resources
+C:\Users\Mike\Desktop\Barroc-IT\Barroc\Barroc\Barroc\bin\Debug\Barroc.exe.config
+C:\Users\Mike\Desktop\Barroc-IT\Barroc\Barroc\Barroc\obj\Debug\Interop.Microsoft.Office.Interop.Excel.dll
+C:\Users\Mike\Desktop\Barroc-IT\Barroc\Barroc\Barroc\obj\Debug\Barroc.csproj.ResolveComReference.cache
+C:\Users\Mike\Desktop\Barroc-IT\Barroc\Barroc\Barroc\obj\Debug\Barroc.exe
+C:\Users\Mike\Desktop\Barroc-IT\Barroc\Barroc\Barroc\obj\Debug\Barroc.pdb
+C:\Users\Mike\Desktop\Barroc-IT\Barroc\Barroc\Barroc\bin\Debug\Barroc-IT.mdf
+C:\Users\Mike\Desktop\Barroc-IT\Barroc\Barroc\Barroc\bin\Debug\Barroc-IT_log.ldf
+C:\Users\Mike\Desktop\Barroc-IT\Barroc\Barroc\Barroc\bin\Debug\Barroc.exe
+C:\Users\Mike\Desktop\Barroc-IT\Barroc\Barroc\Barroc\bin\Debug\Barroc.pdb
+C:\Users\Mike\Desktop\Barroc-IT\Barroc\Barroc\Barroc\obj\Debug\Barroc.csprojResolveAssemblyReference.cache
+C:\Users\Mike\Desktop\Barroc-IT\Barroc\Barroc\Barroc\obj\Debug\Barroc.Appointment.resources
+C:\Users\Mike\Desktop\Barroc-IT\Barroc\Barroc\Barroc\obj\Debug\Barroc.Customer.resources
+C:\Users\Mike\Desktop\Barroc-IT\Barroc\Barroc\Barroc\obj\Debug\Barroc.Development.resources
+C:\Users\Mike\Desktop\Barroc-IT\Barroc\Barroc\Barroc\obj\Debug\Barroc.Finance.resources
+C:\Users\Mike\Desktop\Barroc-IT\Barroc\Barroc\Barroc\obj\Debug\Barroc.financial.resources
+C:\Users\Mike\Desktop\Barroc-IT\Barroc\Barroc\Barroc\obj\Debug\Barroc.financialADD.resources
+C:\Users\Mike\Desktop\Barroc-IT\Barroc\Barroc\Barroc\obj\Debug\Barroc.Form1.resources
+C:\Users\Mike\Desktop\Barroc-IT\Barroc\Barroc\Barroc\obj\Debug\Barroc.Project.resources
+C:\Users\Mike\Desktop\Barroc-IT\Barroc\Barroc\Barroc\obj\Debug\Barroc.Properties.Resources.resources
+C:\Users\Mike\Desktop\Barroc-IT\Barroc\Barroc\Barroc\obj\Debug\Barroc.Sales.resources
+C:\Users\Mike\Desktop\Barroc-IT\Barroc\Barroc\Barroc\obj\Debug\Barroc.showappointment.resources
+C:\Users\Mike\Desktop\Barroc-IT\Barroc\Barroc\Barroc\obj\Debug\Barroc.showcustomer.resources
+C:\Users\Mike\Desktop\Barroc-IT\Barroc\Barroc\Barroc\obj\Debug\Barroc.ShowProject.resources
+C:\Users\Mike\Desktop\Barroc-IT\Barroc\Barroc\Barroc\obj\Debug\Barroc.csproj.GenerateResource.Cache
+C:\Users\Teun\Documents\GitHub\Barroc tweede\Barroc\Barroc\Barroc\bin\Debug\Barroc.exe.config
+C:\Users\Teun\Documents\GitHub\Barroc tweede\Barroc\Barroc\Barroc\obj\Debug\Interop.Microsoft.Office.Interop.Excel.dll
+C:\Users\Teun\Documents\GitHub\Barroc tweede\Barroc\Barroc\Barroc\obj\Debug\Barroc.csproj.ResolveComReference.cache
+C:\Users\Teun\Documents\GitHub\Barroc tweede\Barroc\Barroc\Barroc\obj\Debug\Barroc.exe
+C:\Users\Teun\Documents\GitHub\Barroc tweede\Barroc\Barroc\Barroc\obj\Debug\Barroc.pdb
+C:\Users\Teun\Documents\GitHub\Barroc tweede\Barroc\Barroc\Barroc\bin\Debug\Barroc-IT.mdf
+C:\Users\Teun\Documents\GitHub\Barroc tweede\Barroc\Barroc\Barroc\bin\Debug\Barroc-IT_log.ldf
+C:\Users\Teun\Documents\GitHub\Barroc tweede\Barroc\Barroc\Barroc\bin\Debug\Barroc.exe
+C:\Users\Teun\Documents\GitHub\Barroc tweede\Barroc\Barroc\Barroc\bin\Debug\Barroc.pdb
+C:\Users\Teun\Documents\GitHub\Barroc tweede\Barroc\Barroc\Barroc\obj\Debug\Barroc.csprojResolveAssemblyReference.cache
+C:\Users\Teun\Documents\GitHub\Barroc tweede\Barroc\Barroc\Barroc\obj\Debug\Barroc.Appointment.resources
+C:\Users\Teun\Documents\GitHub\Barroc tweede\Barroc\Barroc\Barroc\obj\Debug\Barroc.Customer.resources
+C:\Users\Teun\Documents\GitHub\Barroc tweede\Barroc\Barroc\Barroc\obj\Debug\Barroc.Development.resources
+C:\Users\Teun\Documents\GitHub\Barroc tweede\Barroc\Barroc\Barroc\obj\Debug\Barroc.Finance.resources
+C:\Users\Teun\Documents\GitHub\Barroc tweede\Barroc\Barroc\Barroc\obj\Debug\Barroc.financial.resources
+C:\Users\Teun\Documents\GitHub\Barroc tweede\Barroc\Barroc\Barroc\obj\Debug\Barroc.financialADD.resources
+C:\Users\Teun\Documents\GitHub\Barroc tweede\Barroc\Barroc\Barroc\obj\Debug\Barroc.Form1.resources
+C:\Users\Teun\Documents\GitHub\Barroc tweede\Barroc\Barroc\Barroc\obj\Debug\Barroc.Project.resources
+C:\Users\Teun\Documents\GitHub\Barroc tweede\Barroc\Barroc\Barroc\obj\Debug\Barroc.Properties.Resources.resources
+C:\Users\Teun\Documents\GitHub\Barroc tweede\Barroc\Barroc\Barroc\obj\Debug\Barroc.Sales.resources
+C:\Users\Teun\Documents\GitHub\Barroc tweede\Barroc\Barroc\Barroc\obj\Debug\Barroc.showappointment.resources
+C:\Users\Teun\Documents\GitHub\Barroc tweede\Barroc\Barroc\Barroc\obj\Debug\Barroc.showcustomer.resources
+C:\Users\Teun\Documents\GitHub\Barroc tweede\Barroc\Barroc\Barroc\obj\Debug\Barroc.ShowProject.resources
+C:\Users\Teun\Documents\GitHub\Barroc tweede\Barroc\Barroc\Barroc\obj\Debug\Barroc.csproj.GenerateResource.Cache
+C:\Users\Teun\Documents\GitHub\Barroc tweede\Barroc\Barroc\Barroc\obj\Debug\Barroc.Viewproject.resources
+C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\bin\Debug\Barroc.exe.config
+C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\obj\Debug\Interop.Microsoft.Office.Interop.Excel.dll
+C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\obj\Debug\Barroc.csproj.ResolveComReference.cache
+C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\obj\Debug\Barroc.exe
+C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\obj\Debug\Barroc.pdb
+C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\bin\Debug\Barroc-IT.mdf
+C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\bin\Debug\Barroc-IT_log.ldf
+C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\bin\Debug\Barroc.exe
+C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\bin\Debug\Barroc.pdb
+C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\obj\Debug\Barroc.csprojResolveAssemblyReference.cache
+C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\obj\Debug\Barroc.Appointment.resources
+C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\obj\Debug\Barroc.Customer.resources
+C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\obj\Debug\Barroc.Development.resources
+C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\obj\Debug\Barroc.Finance.resources
+C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\obj\Debug\Barroc.financial.resources
+C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\obj\Debug\Barroc.financialADD.resources
+C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\obj\Debug\Barroc.Form1.resources
+C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\obj\Debug\Barroc.Project.resources
+C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\obj\Debug\Barroc.Properties.Resources.resources
+C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\obj\Debug\Barroc.Sales.resources
+C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\obj\Debug\Barroc.showappointment.resources
+C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\obj\Debug\Barroc.showcustomer.resources
+C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\obj\Debug\Barroc.ShowProject.resources
+C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\obj\Debug\Barroc.Viewproject.resources
+C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\obj\Debug\Barroc.csproj.GenerateResource.Cache
+C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\obj\Debug\Barroc.ViewStatus.resources
+C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\obj\Debug\Barroc.Viewcustomer.resources
