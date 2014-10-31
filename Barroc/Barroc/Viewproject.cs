@@ -32,7 +32,7 @@ namespace Barroc
 
         private void viewporject_grid_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            
         }
 
         private void btn_back_Click(object sender, EventArgs e)
