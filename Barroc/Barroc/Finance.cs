@@ -15,9 +15,11 @@ namespace Barroc
     public partial class Finance : Form
     {
         ConnectionManager conn = new ConnectionManager();
+        string project_id;
         public Finance()
         {
             InitializeComponent();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -44,7 +46,7 @@ namespace Barroc
 
         private void button2_Click(object sender, EventArgs e)
         {
-            financialupdate update = new financialupdate(conn);
+            financialupdate update = new financialupdate(conn,project_id);
             update.Show();
             this.Close();
         }
