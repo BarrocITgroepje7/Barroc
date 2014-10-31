@@ -47,7 +47,9 @@ namespace Barroc
 
         private void btn_ManageCustomers_Click(object sender, EventArgs e)
         {
-
+            Viewcustomer viewcustomer = new Viewcustomer();
+            viewcustomer.Show();
+            this.Hide();
         }
     }
 }

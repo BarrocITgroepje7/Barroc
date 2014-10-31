@@ -96,3 +96,4 @@ C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\obj\Debug\Barro
 C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\obj\Debug\Barroc.Viewproject.resources
 C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\obj\Debug\Barroc.csproj.GenerateResource.Cache
 C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\obj\Debug\Barroc.ViewStatus.resources
+C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\obj\Debug\Barroc.Viewcustomer.resources

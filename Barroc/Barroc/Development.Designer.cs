@@ -31,8 +31,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_WelcomeDev = new System.Windows.Forms.Label();
             this.btn_AddProject = new System.Windows.Forms.Button();
-            this.btn_ManageProject = new System.Windows.Forms.Button();
-            this.btn_DeleteProject = new System.Windows.Forms.Button();
             this.btn_ViewStatus = new System.Windows.Forms.Button();
             this.btn_ManageCustomers = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -64,33 +62,9 @@
             this.btn_AddProject.Name = "btn_AddProject";
             this.btn_AddProject.Size = new System.Drawing.Size(120, 49);
             this.btn_AddProject.TabIndex = 2;
-            this.btn_AddProject.Text = "Add Project";
+            this.btn_AddProject.Text = "Project";
             this.btn_AddProject.UseVisualStyleBackColor = true;
             this.btn_AddProject.Click += new System.EventHandler(this.btn_AddProject_Click);
-            // 
-            // btn_ManageProject
-            // 
-            this.btn_ManageProject.AccessibleDescription = "btn_ManageProject";
-            this.btn_ManageProject.AccessibleName = "btn_ManageProject";
-            this.btn_ManageProject.Location = new System.Drawing.Point(24, 152);
-            this.btn_ManageProject.Name = "btn_ManageProject";
-            this.btn_ManageProject.Size = new System.Drawing.Size(120, 56);
-            this.btn_ManageProject.TabIndex = 3;
-            this.btn_ManageProject.Text = "Manage Project";
-            this.btn_ManageProject.UseVisualStyleBackColor = true;
-            this.btn_ManageProject.Click += new System.EventHandler(this.btn_ManageProject_Click);
-            // 
-            // btn_DeleteProject
-            // 
-            this.btn_DeleteProject.AccessibleDescription = "btn_DeleteProject";
-            this.btn_DeleteProject.AccessibleName = "btn_DeleteProject";
-            this.btn_DeleteProject.Location = new System.Drawing.Point(24, 230);
-            this.btn_DeleteProject.Name = "btn_DeleteProject";
-            this.btn_DeleteProject.Size = new System.Drawing.Size(120, 52);
-            this.btn_DeleteProject.TabIndex = 4;
-            this.btn_DeleteProject.Text = "Delete Project";
-            this.btn_DeleteProject.UseVisualStyleBackColor = true;
-            this.btn_DeleteProject.Click += new System.EventHandler(this.btn_DeleteProject_Click);
             // 
             // btn_ViewStatus
             // 
@@ -108,11 +82,11 @@
             // 
             this.btn_ManageCustomers.AccessibleDescription = "btn_ManageCustomers";
             this.btn_ManageCustomers.AccessibleName = "btn_ManageCustomers";
-            this.btn_ManageCustomers.Location = new System.Drawing.Point(227, 152);
+            this.btn_ManageCustomers.Location = new System.Drawing.Point(24, 157);
             this.btn_ManageCustomers.Name = "btn_ManageCustomers";
-            this.btn_ManageCustomers.Size = new System.Drawing.Size(127, 56);
+            this.btn_ManageCustomers.Size = new System.Drawing.Size(120, 56);
             this.btn_ManageCustomers.TabIndex = 6;
-            this.btn_ManageCustomers.Text = "Manage Customers";
+            this.btn_ManageCustomers.Text = "Customers";
             this.btn_ManageCustomers.UseVisualStyleBackColor = true;
             this.btn_ManageCustomers.Click += new System.EventHandler(this.btn_ManageCustomers_Click);
             // 
@@ -124,8 +98,6 @@
             this.ClientSize = new System.Drawing.Size(402, 324);
             this.Controls.Add(this.btn_ManageCustomers);
             this.Controls.Add(this.btn_ViewStatus);
-            this.Controls.Add(this.btn_DeleteProject);
-            this.Controls.Add(this.btn_ManageProject);
             this.Controls.Add(this.btn_AddProject);
             this.Controls.Add(this.lbl_WelcomeDev);
             this.Controls.Add(this.label1);
@@ -141,8 +113,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbl_WelcomeDev;
         private System.Windows.Forms.Button btn_AddProject;
-        private System.Windows.Forms.Button btn_ManageProject;
-        private System.Windows.Forms.Button btn_DeleteProject;
         private System.Windows.Forms.Button btn_ViewStatus;
         private System.Windows.Forms.Button btn_ManageCustomers;
     }
