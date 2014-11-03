@@ -61,6 +61,7 @@
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.viewporject_grid);
             this.Name = "Viewproject";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Viewproject";
             ((System.ComponentModel.ISupportInitialize)(this.viewporject_grid)).EndInit();
             this.ResumeLayout(false);

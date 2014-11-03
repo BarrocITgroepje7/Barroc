@@ -13,6 +13,7 @@ namespace Barroc
 {
     public partial class Form1 : Form
     {
+
         ConnectionManager conn = new ConnectionManager();
         public Form1()
         {

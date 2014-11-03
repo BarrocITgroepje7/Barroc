@@ -114,6 +114,7 @@
             this.Controls.Add(this.lbl_WelcomeDev);
             this.Controls.Add(this.label1);
             this.Name = "Development";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Development";
             this.ResumeLayout(false);
             this.PerformLayout();

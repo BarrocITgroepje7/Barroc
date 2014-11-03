@@ -97,6 +97,7 @@
             this.Controls.Add(this.Logout_btn);
             this.Controls.Add(this.Welkom_lbl);
             this.Name = "Sales";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sales";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Sales_FormClosing);
             this.ResumeLayout(false);

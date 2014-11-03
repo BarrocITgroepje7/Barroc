@@ -39,9 +39,9 @@ namespace Barroc
 
         private void customervieuw_Click(object sender, EventArgs e)
         {
-            //vieuwcustomer vieuw = new vieuwcustomer();
-            //vieuw.Show();
-            //this.Close();
+            Viewcustomer vieuw = new Viewcustomer();
+            vieuw.Show();
+            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)

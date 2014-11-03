@@ -104,6 +104,7 @@
             this.Controls.Add(this.Password_txt);
             this.Controls.Add(this.Btn_Login);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Barroc-IT Login";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -230,6 +230,7 @@
             this.Controls.Add(this.Appointment_grid);
             this.Controls.Add(this.back_btn);
             this.Name = "Appointment";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Appointment";
             ((System.ComponentModel.ISupportInitialize)(this.Appointment_grid)).EndInit();
             this.ResumeLayout(false);
