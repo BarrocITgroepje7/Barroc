@@ -1,9 +1,0 @@
-C:\Users\michael\Documents\GitHub\Barroc\test\test\bin\Debug\test.exe.config
-C:\Users\michael\Documents\GitHub\Barroc\test\test\bin\Debug\test.exe
-C:\Users\michael\Documents\GitHub\Barroc\test\test\bin\Debug\test.pdb
-C:\Users\michael\Documents\GitHub\Barroc\test\test\obj\Debug\test.csprojResolveAssemblyReference.cache
-C:\Users\michael\Documents\GitHub\Barroc\test\test\obj\Debug\test.Form1.resources
-C:\Users\michael\Documents\GitHub\Barroc\test\test\obj\Debug\test.Properties.Resources.resources
-C:\Users\michael\Documents\GitHub\Barroc\test\test\obj\Debug\test.csproj.GenerateResource.Cache
-C:\Users\michael\Documents\GitHub\Barroc\test\test\obj\Debug\test.exe
-C:\Users\michael\Documents\GitHub\Barroc\test\test\obj\Debug\test.pdb
