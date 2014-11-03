@@ -72,7 +72,6 @@ C:\Users\Teun\Documents\GitHub\Barroc tweede\Barroc\Barroc\Barroc\obj\Debug\Barr
 C:\Users\Teun\Documents\GitHub\Barroc tweede\Barroc\Barroc\Barroc\obj\Debug\Barroc.Viewproject.resources
 C:\Users\michael\Documents\GitHub\Barroc\Barroc\Barroc\obj\Debug\Barroc.ShowProject.resources
 C:\Users\michael\Documents\GitHub\Barroc\Barroc\Barroc\obj\Debug\Barroc.Viewproject.resources
-C:\Users\michael\Documents\GitHub\Barroc\Barroc\Barroc\obj\Debug\Barroc.Financialedit.resources
 C:\Users\michael\Documents\GitHub\Barroc\Barroc\Barroc\obj\Debug\Barroc.financialupdate.resources
 C:\Users\michael\Desktop\Barroc\Barroc\bin\Debug\Barroc.exe.config
 C:\Users\michael\Desktop\Barroc\Barroc\obj\Debug\Interop.Microsoft.Office.Interop.Excel.dll
@@ -108,3 +107,5 @@ C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\obj\Debug\Barro
 C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\obj\Debug\Barroc.Viewproject.resources
 C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\obj\Debug\Barroc.Viewstatus.resources
 C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\obj\Debug\Barroc.csproj.GenerateResource.Cache
+C:\Users\michael\Documents\GitHub\Barroc\Barroc\Barroc\obj\Debug\Barroc.Viewcustomer.resources
+C:\Users\michael\Documents\GitHub\Barroc\Barroc\Barroc\obj\Debug\Barroc.Viewstatus.resources

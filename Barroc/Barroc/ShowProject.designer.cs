@@ -257,7 +257,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(527, 261);
+            this.ClientSize = new System.Drawing.Size(518, 256);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.btn_save);
             this.Controls.Add(this.txt_numberofinvoices);
@@ -283,6 +283,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lbl_customerid);
             this.Name = "ShowProject";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Show Project";
             this.ResumeLayout(false);
             this.PerformLayout();
