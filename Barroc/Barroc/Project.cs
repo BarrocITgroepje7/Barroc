@@ -123,5 +123,79 @@ namespace Barroc
             bs.Filter = "Project_name like '%" + textBox1.Text + "%'";
             Project_grid.DataSource = bs;
         }
+
+        private void projectid_lbl_Click(object sender, EventArgs e)
+        {
+            projectid_lbl.Visible = false;
+        }
+
+        private void txt_projectid_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+                e.Handled = true;
+        }
+
+        private void txt_customerid_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+                e.Handled = true;
+        }
+
+        private void txt_offernumber_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_offernumber_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+                e.Handled = true;
+        }
+
+        private void txt_numberofinvoices_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+                e.Handled = true;
+        }
+
+        private void projectname_lbl_Click(object sender, EventArgs e)
+        {
+            projectname_lbl.Visible = false;
+        }
+
+        private void status_lbl_Click(object sender, EventArgs e)
+        {
+            status_lbl.Visible = false;
+        }
+
+        private void applications_lbl_Click(object sender, EventArgs e)
+        {
+            applications_lbl.Visible = false;
+        }
+
+        private void hardware_lbl_Click(object sender, EventArgs e)
+        {
+            hardware_lbl.Visible = false;
+        }
+
+        private void software_lbl_Click(object sender, EventArgs e)
+        {
+            software_lbl.Visible = false;
+        }
+
+        private void offernumber_lbl_Click(object sender, EventArgs e)
+        {
+            offernumber_lbl.Visible = false;
+        }
+
+        private void internalcontactperson_lbl_Click(object sender, EventArgs e)
+        {
+            internalcontactperson_lbl.Visible = false;
+        }
+
+        private void numberofinvooices_lbl_Click(object sender, EventArgs e)
+        {
+            numberofinvooices_lbl.Visible = false;
+        }
     }
 }

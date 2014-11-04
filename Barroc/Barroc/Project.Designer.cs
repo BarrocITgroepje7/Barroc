@@ -60,6 +60,16 @@
             this.btn_toevoegen = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.projectid_lbl = new System.Windows.Forms.Label();
+            this.customerid_lbl = new System.Windows.Forms.Label();
+            this.projectname_lbl = new System.Windows.Forms.Label();
+            this.status_lbl = new System.Windows.Forms.Label();
+            this.applications_lbl = new System.Windows.Forms.Label();
+            this.hardware_lbl = new System.Windows.Forms.Label();
+            this.software_lbl = new System.Windows.Forms.Label();
+            this.offernumber_lbl = new System.Windows.Forms.Label();
+            this.internalcontactperson_lbl = new System.Windows.Forms.Label();
+            this.numberofinvooices_lbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Project_grid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -227,6 +237,7 @@
             this.txt_projectid.Name = "txt_projectid";
             this.txt_projectid.Size = new System.Drawing.Size(143, 20);
             this.txt_projectid.TabIndex = 18;
+            this.txt_projectid.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_projectid_KeyPress);
             // 
             // txt_customerid
             // 
@@ -234,6 +245,7 @@
             this.txt_customerid.Name = "txt_customerid";
             this.txt_customerid.Size = new System.Drawing.Size(143, 20);
             this.txt_customerid.TabIndex = 19;
+            this.txt_customerid.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_customerid_KeyPress);
             // 
             // txt_projectname
             // 
@@ -276,6 +288,8 @@
             this.txt_offernumber.Name = "txt_offernumber";
             this.txt_offernumber.Size = new System.Drawing.Size(143, 20);
             this.txt_offernumber.TabIndex = 26;
+            this.txt_offernumber.TextChanged += new System.EventHandler(this.txt_offernumber_TextChanged);
+            this.txt_offernumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_offernumber_KeyPress);
             // 
             // txt_internalcontactperson
             // 
@@ -304,6 +318,7 @@
             this.txt_numberofinvoices.Name = "txt_numberofinvoices";
             this.txt_numberofinvoices.Size = new System.Drawing.Size(143, 20);
             this.txt_numberofinvoices.TabIndex = 30;
+            this.txt_numberofinvoices.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_numberofinvoices_KeyPress);
             // 
             // btn_toevoegen
             // 
@@ -332,12 +347,141 @@
             this.label1.TabIndex = 33;
             this.label1.Text = "* Search";
             // 
+            // projectid_lbl
+            // 
+            this.projectid_lbl.AutoSize = true;
+            this.projectid_lbl.BackColor = System.Drawing.SystemColors.Window;
+            this.projectid_lbl.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.projectid_lbl.Location = new System.Drawing.Point(773, 12);
+            this.projectid_lbl.Name = "projectid_lbl";
+            this.projectid_lbl.Size = new System.Drawing.Size(13, 13);
+            this.projectid_lbl.TabIndex = 34;
+            this.projectid_lbl.Text = "1";
+            this.projectid_lbl.Click += new System.EventHandler(this.projectid_lbl_Click);
+            // 
+            // customerid_lbl
+            // 
+            this.customerid_lbl.AutoSize = true;
+            this.customerid_lbl.BackColor = System.Drawing.SystemColors.Window;
+            this.customerid_lbl.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.customerid_lbl.Location = new System.Drawing.Point(773, 42);
+            this.customerid_lbl.Name = "customerid_lbl";
+            this.customerid_lbl.Size = new System.Drawing.Size(13, 13);
+            this.customerid_lbl.TabIndex = 35;
+            this.customerid_lbl.Text = "1";
+            // 
+            // projectname_lbl
+            // 
+            this.projectname_lbl.AutoSize = true;
+            this.projectname_lbl.BackColor = System.Drawing.SystemColors.Window;
+            this.projectname_lbl.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.projectname_lbl.Location = new System.Drawing.Point(773, 74);
+            this.projectname_lbl.Name = "projectname_lbl";
+            this.projectname_lbl.Size = new System.Drawing.Size(69, 13);
+            this.projectname_lbl.TabIndex = 36;
+            this.projectname_lbl.Text = "Project sprak";
+            this.projectname_lbl.Click += new System.EventHandler(this.projectname_lbl_Click);
+            // 
+            // status_lbl
+            // 
+            this.status_lbl.AutoSize = true;
+            this.status_lbl.BackColor = System.Drawing.SystemColors.Window;
+            this.status_lbl.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.status_lbl.Location = new System.Drawing.Point(773, 105);
+            this.status_lbl.Name = "status_lbl";
+            this.status_lbl.Size = new System.Drawing.Size(38, 13);
+            this.status_lbl.TabIndex = 37;
+            this.status_lbl.Text = "Ready";
+            this.status_lbl.Click += new System.EventHandler(this.status_lbl_Click);
+            // 
+            // applications_lbl
+            // 
+            this.applications_lbl.AutoSize = true;
+            this.applications_lbl.BackColor = System.Drawing.SystemColors.Window;
+            this.applications_lbl.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.applications_lbl.Location = new System.Drawing.Point(773, 136);
+            this.applications_lbl.Name = "applications_lbl";
+            this.applications_lbl.Size = new System.Drawing.Size(92, 13);
+            this.applications_lbl.TabIndex = 38;
+            this.applications_lbl.Text = "Mobile application";
+            this.applications_lbl.Click += new System.EventHandler(this.applications_lbl_Click);
+            // 
+            // hardware_lbl
+            // 
+            this.hardware_lbl.AutoSize = true;
+            this.hardware_lbl.BackColor = System.Drawing.SystemColors.Window;
+            this.hardware_lbl.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.hardware_lbl.Location = new System.Drawing.Point(773, 165);
+            this.hardware_lbl.Name = "hardware_lbl";
+            this.hardware_lbl.Size = new System.Drawing.Size(38, 13);
+            this.hardware_lbl.TabIndex = 39;
+            this.hardware_lbl.Text = "Mobile";
+            this.hardware_lbl.Click += new System.EventHandler(this.hardware_lbl_Click);
+            // 
+            // software_lbl
+            // 
+            this.software_lbl.AutoSize = true;
+            this.software_lbl.BackColor = System.Drawing.SystemColors.Window;
+            this.software_lbl.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.software_lbl.Location = new System.Drawing.Point(1053, 12);
+            this.software_lbl.Name = "software_lbl";
+            this.software_lbl.Size = new System.Drawing.Size(93, 13);
+            this.software_lbl.TabIndex = 40;
+            this.software_lbl.Text = "Visual studio 2013";
+            this.software_lbl.Click += new System.EventHandler(this.software_lbl_Click);
+            // 
+            // offernumber_lbl
+            // 
+            this.offernumber_lbl.AutoSize = true;
+            this.offernumber_lbl.BackColor = System.Drawing.SystemColors.Window;
+            this.offernumber_lbl.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.offernumber_lbl.Location = new System.Drawing.Point(1053, 42);
+            this.offernumber_lbl.Name = "offernumber_lbl";
+            this.offernumber_lbl.Size = new System.Drawing.Size(13, 13);
+            this.offernumber_lbl.TabIndex = 41;
+            this.offernumber_lbl.Text = "1";
+            this.offernumber_lbl.Click += new System.EventHandler(this.offernumber_lbl_Click);
+            // 
+            // internalcontactperson_lbl
+            // 
+            this.internalcontactperson_lbl.AutoSize = true;
+            this.internalcontactperson_lbl.BackColor = System.Drawing.SystemColors.Window;
+            this.internalcontactperson_lbl.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.internalcontactperson_lbl.Location = new System.Drawing.Point(1053, 74);
+            this.internalcontactperson_lbl.Name = "internalcontactperson_lbl";
+            this.internalcontactperson_lbl.Size = new System.Drawing.Size(59, 13);
+            this.internalcontactperson_lbl.TabIndex = 42;
+            this.internalcontactperson_lbl.Text = "Teun Aarts";
+            this.internalcontactperson_lbl.Click += new System.EventHandler(this.internalcontactperson_lbl_Click);
+            // 
+            // numberofinvooices_lbl
+            // 
+            this.numberofinvooices_lbl.AutoSize = true;
+            this.numberofinvooices_lbl.BackColor = System.Drawing.SystemColors.Window;
+            this.numberofinvooices_lbl.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.numberofinvooices_lbl.Location = new System.Drawing.Point(1053, 164);
+            this.numberofinvooices_lbl.Name = "numberofinvooices_lbl";
+            this.numberofinvooices_lbl.Size = new System.Drawing.Size(13, 13);
+            this.numberofinvooices_lbl.TabIndex = 43;
+            this.numberofinvooices_lbl.Text = "1";
+            this.numberofinvooices_lbl.Click += new System.EventHandler(this.numberofinvooices_lbl_Click);
+            // 
             // Project
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(641, 276);
+            this.ClientSize = new System.Drawing.Size(1197, 276);
+            this.Controls.Add(this.numberofinvooices_lbl);
+            this.Controls.Add(this.internalcontactperson_lbl);
+            this.Controls.Add(this.offernumber_lbl);
+            this.Controls.Add(this.software_lbl);
+            this.Controls.Add(this.hardware_lbl);
+            this.Controls.Add(this.applications_lbl);
+            this.Controls.Add(this.status_lbl);
+            this.Controls.Add(this.projectname_lbl);
+            this.Controls.Add(this.customerid_lbl);
+            this.Controls.Add(this.projectid_lbl);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btn_toevoegen);
@@ -413,5 +557,15 @@
         private System.Windows.Forms.Button btn_toevoegen;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label projectid_lbl;
+        private System.Windows.Forms.Label customerid_lbl;
+        private System.Windows.Forms.Label projectname_lbl;
+        private System.Windows.Forms.Label status_lbl;
+        private System.Windows.Forms.Label applications_lbl;
+        private System.Windows.Forms.Label hardware_lbl;
+        private System.Windows.Forms.Label software_lbl;
+        private System.Windows.Forms.Label offernumber_lbl;
+        private System.Windows.Forms.Label internalcontactperson_lbl;
+        private System.Windows.Forms.Label numberofinvooices_lbl;
     }
 }
