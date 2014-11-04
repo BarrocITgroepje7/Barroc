@@ -35,9 +35,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Subject_txt = new System.Windows.Forms.TextBox();
-            this.Next_txt = new System.Windows.Forms.TextBox();
-            this.Contact_txt = new System.Windows.Forms.TextBox();
-            this.Action_txt = new System.Windows.Forms.TextBox();
             this.Customer_txt = new System.Windows.Forms.TextBox();
             this.Appointment_txt = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -46,6 +43,9 @@
             this.back_btn = new System.Windows.Forms.Button();
             this.btn_back = new System.Windows.Forms.Button();
             this.btn_delete = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.Appointment_grid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -109,27 +109,6 @@
             this.Subject_txt.Name = "Subject_txt";
             this.Subject_txt.Size = new System.Drawing.Size(100, 20);
             this.Subject_txt.TabIndex = 24;
-            // 
-            // Next_txt
-            // 
-            this.Next_txt.Location = new System.Drawing.Point(725, 115);
-            this.Next_txt.Name = "Next_txt";
-            this.Next_txt.Size = new System.Drawing.Size(100, 20);
-            this.Next_txt.TabIndex = 23;
-            // 
-            // Contact_txt
-            // 
-            this.Contact_txt.Location = new System.Drawing.Point(725, 89);
-            this.Contact_txt.Name = "Contact_txt";
-            this.Contact_txt.Size = new System.Drawing.Size(100, 20);
-            this.Contact_txt.TabIndex = 22;
-            // 
-            // Action_txt
-            // 
-            this.Action_txt.Location = new System.Drawing.Point(725, 63);
-            this.Action_txt.Name = "Action_txt";
-            this.Action_txt.Size = new System.Drawing.Size(100, 20);
-            this.Action_txt.TabIndex = 21;
             // 
             // Customer_txt
             // 
@@ -205,12 +184,42 @@
             this.btn_delete.UseVisualStyleBackColor = true;
             this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CustomFormat = "dd-MM-yyyy";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(725, 63);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(102, 20);
+            this.dateTimePicker1.TabIndex = 34;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.CustomFormat = "dd-MM-yyyy";
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker2.Location = new System.Drawing.Point(725, 89);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(102, 20);
+            this.dateTimePicker2.TabIndex = 35;
+            // 
+            // dateTimePicker3
+            // 
+            this.dateTimePicker3.CustomFormat = "dd-MM-yyyy";
+            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker3.Location = new System.Drawing.Point(725, 115);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Size = new System.Drawing.Size(102, 20);
+            this.dateTimePicker3.TabIndex = 36;
+            // 
             // Appointment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(637, 262);
+            this.ClientSize = new System.Drawing.Size(837, 262);
+            this.Controls.Add(this.dateTimePicker3);
+            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.btn_delete);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.label6);
@@ -220,9 +229,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Subject_txt);
-            this.Controls.Add(this.Next_txt);
-            this.Controls.Add(this.Contact_txt);
-            this.Controls.Add(this.Action_txt);
             this.Controls.Add(this.Customer_txt);
             this.Controls.Add(this.Appointment_txt);
             this.Controls.Add(this.button1);
@@ -247,9 +253,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox Subject_txt;
-        private System.Windows.Forms.TextBox Next_txt;
-        private System.Windows.Forms.TextBox Contact_txt;
-        private System.Windows.Forms.TextBox Action_txt;
         private System.Windows.Forms.TextBox Customer_txt;
         private System.Windows.Forms.TextBox Appointment_txt;
         private System.Windows.Forms.Button button1;
@@ -258,5 +261,8 @@
         private System.Windows.Forms.Button back_btn;
         private System.Windows.Forms.Button btn_back;
         private System.Windows.Forms.Button btn_delete;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker3;
     }
 }

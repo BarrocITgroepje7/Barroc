@@ -46,9 +46,9 @@ namespace Barroc
             SqlCommand cmd = new SqlCommand(sql, conn.GetConnection());
             cmd.Parameters.Add(new SqlParameter("@APPOINTMENT_ID", Appointment_txt.Text));
             cmd.Parameters.Add(new SqlParameter("@CUSTOMER_ID", Customer_txt.Text));
-            cmd.Parameters.Add(new SqlParameter("@DATE_OF_ACTION", Action_txt.Text));
-            cmd.Parameters.Add(new SqlParameter("@LAST_CONTACT", Contact_txt.Text));
-            cmd.Parameters.Add(new SqlParameter("@NEXT_ACTION", Next_txt.Text));
+            cmd.Parameters.Add(new SqlParameter("@DATE_OF_ACTION", this.dateTimePicker1.Text));
+            cmd.Parameters.Add(new SqlParameter("@LAST_CONTACT", this.dateTimePicker2.Text));
+            cmd.Parameters.Add(new SqlParameter("@NEXT_ACTION", this.dateTimePicker3.Text));
             cmd.Parameters.Add(new SqlParameter("@SUBJECT", Subject_txt.Text));
 
             cmd.Connection.Open();
