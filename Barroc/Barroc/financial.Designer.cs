@@ -37,6 +37,7 @@
             // financialgrid
             // 
             this.financialgrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.financialgrid.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.financialgrid.Location = new System.Drawing.Point(12, 12);
             this.financialgrid.Name = "financialgrid";
             this.financialgrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
