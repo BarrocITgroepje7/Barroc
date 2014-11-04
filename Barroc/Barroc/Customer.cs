@@ -112,6 +112,7 @@ namespace Barroc
 
         private void btn_toevoegen_Click(object sender, EventArgs e)
         {
+            //AreFieldsValid.FieldsValid();
             string sql = "INSERT INTO Customer(Customer_ID,CustomerName,Adress,Zipcode,Residence,Second_Adress,Second_Zipcode,Seconde_Residence,Contactperson,Initials,Telephone_number,Second_Telephone_Number,Fax_number,Email) values (@Customer_ID,@CustomerName,@Adress,@Zipcode,@Residence,@Second_Adress,@Second_Zipcode,@Seconde_Residence,@Contactperson,@Initials,@Telephone_number,@Second_Telephone_Number,@Fax_number,@Email)";
             SqlCommand cmd = new SqlCommand(sql, conn.GetConnection());
             cmd.Parameters.Add(new SqlParameter("@Customer_ID", txt_customerid.Text));

@@ -138,3 +138,5 @@ C:\Users\michael\Documents\GitHub\Barroc\Barroc\Barroc\obj\Debug\Barroc.vieuwcus
 C:\Users\michael\Documents\GitHub\Barroc\Barroc\Barroc\obj\Debug\Barroc.Viewcustomer.resources
 C:\Users\michael\Documents\GitHub\Barroc\Barroc\Barroc\obj\Debug\Barroc.Viewstatus.resources
 C:\Users\michael\Documents\GitHub\Barroc\Barroc\Barroc\obj\Debug\Barroc.DeleteFinancial.resources
+C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\obj\Debug\Barroc.DeleteFinancial.resources
+C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\obj\Debug\Barroc.vieuwcustomerFinance.resources

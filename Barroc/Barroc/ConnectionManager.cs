@@ -17,8 +17,8 @@ namespace Barroc_it
         public ConnectionManager()
         {
             conn = new SqlConnection();
-            //conn.ConnectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\Barroc-IT.mdf;Integrated Security=True";
-            conn.ConnectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\michael\Documents\GitHub\Barroc\Barroc\Barroc\Barroc-IT.mdf;Integrated Security=True";
+            conn.ConnectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Teun\Documents\GitHub\Goede Barroc\Barroc\Barroc\Barroc\Barroc-IT.mdf;Integrated Security=True";
+            //conn.ConnectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\michael\Documents\GitHub\Barroc\Barroc\Barroc\Barroc-IT.mdf;Integrated Security=True";
             //conn.ConnectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Mike\Desktop\Barroc-IT\Barroc\Barroc\Barroc\Barroc-IT.mdf;Integrated Security=True";
             //conn.ConnectionString = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\Barroc-IT.mdf;Integrated Security=True;";
         }
