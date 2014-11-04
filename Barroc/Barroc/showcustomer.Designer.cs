@@ -322,6 +322,7 @@
             this.Controls.Add(this.Adress_txt);
             this.Controls.Add(this.CustomerName_txt);
             this.Name = "showcustomer";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "showcustomer";
             this.ResumeLayout(false);
             this.PerformLayout();

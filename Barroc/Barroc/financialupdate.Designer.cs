@@ -289,6 +289,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.financialgrid);
             this.Name = "financialupdate";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "financialupdate";
             ((System.ComponentModel.ISupportInitialize)(this.financialgrid)).EndInit();
             this.ResumeLayout(false);

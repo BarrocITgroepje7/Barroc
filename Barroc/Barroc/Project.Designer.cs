@@ -371,6 +371,7 @@
             this.Controls.Add(this.Project_grid);
             this.Controls.Add(this.back_btn);
             this.Name = "Project";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Project";
             ((System.ComponentModel.ISupportInitialize)(this.Project_grid)).EndInit();
             this.ResumeLayout(false);

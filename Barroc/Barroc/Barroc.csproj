@@ -140,6 +140,12 @@
     <Compile Include="ShowProject.designer.cs">
       <DependentUpon>ShowProject.cs</DependentUpon>
     </Compile>
+    <Compile Include="vieuwcustomerFinance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vieuwcustomerFinance.Designer.cs">
+      <DependentUpon>vieuwcustomerFinance.cs</DependentUpon>
+    </Compile>
     <Compile Include="Viewcustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -205,6 +211,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ShowProject.resx">
       <DependentUpon>ShowProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vieuwcustomerFinance.resx">
+      <DependentUpon>vieuwcustomerFinance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Viewcustomer.resx">
       <DependentUpon>Viewcustomer.cs</DependentUpon>

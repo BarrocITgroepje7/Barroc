@@ -61,6 +61,7 @@
             this.Controls.Add(this.viewcustomer_grid);
             this.Controls.Add(this.btn_back);
             this.Name = "Viewcustomer";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Viewcustomer";
             ((System.ComponentModel.ISupportInitialize)(this.viewcustomer_grid)).EndInit();
             this.ResumeLayout(false);

@@ -283,6 +283,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lbl_customerid);
             this.Name = "ShowProject";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Show Project";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -265,6 +265,7 @@
             this.Controls.Add(this.limit);
             this.Controls.Add(this.Balance);
             this.Name = "financialADD";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "financialADD";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.financialADD_FormClosing);
             this.ResumeLayout(false);

@@ -121,6 +121,7 @@
             this.Controls.Add(this.finance_lbl);
             this.Controls.Add(this.button1);
             this.Name = "Finance";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.ResumeLayout(false);
 
         }

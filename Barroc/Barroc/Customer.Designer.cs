@@ -610,6 +610,7 @@
             this.Controls.Add(this.Customer_grid);
             this.Controls.Add(this.btn_back);
             this.Name = "Customer";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Customer";
             this.Load += new System.EventHandler(this.Customer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Customer_grid)).EndInit();

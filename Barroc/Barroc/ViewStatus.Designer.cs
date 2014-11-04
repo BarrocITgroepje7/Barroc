@@ -60,6 +60,7 @@
             this.Controls.Add(this.viewstatus_grid);
             this.Controls.Add(this.btn_back);
             this.Name = "Viewstatus";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Viewstatus";
             ((System.ComponentModel.ISupportInitialize)(this.viewstatus_grid)).EndInit();
             this.ResumeLayout(false);
