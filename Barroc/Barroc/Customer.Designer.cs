@@ -187,6 +187,7 @@
             this.txt_residence.Name = "txt_residence";
             this.txt_residence.Size = new System.Drawing.Size(100, 20);
             this.txt_residence.TabIndex = 14;
+            this.txt_residence.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_residence_KeyPress);
             // 
             // txt_zipcode
             // 
@@ -209,6 +210,7 @@
             this.txt_customername.Name = "txt_customername";
             this.txt_customername.Size = new System.Drawing.Size(100, 20);
             this.txt_customername.TabIndex = 17;
+            this.txt_customername.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_customername_KeyPress);
             // 
             // lbl_secondresidence
             // 
@@ -328,6 +330,7 @@
             this.txt_initials.Name = "txt_initials";
             this.txt_initials.Size = new System.Drawing.Size(116, 20);
             this.txt_initials.TabIndex = 32;
+            this.txt_initials.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_initials_KeyPress);
             // 
             // txt_contactperson
             // 
@@ -335,6 +338,7 @@
             this.txt_contactperson.Name = "txt_contactperson";
             this.txt_contactperson.Size = new System.Drawing.Size(116, 20);
             this.txt_contactperson.TabIndex = 33;
+            this.txt_contactperson.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_contactperson_KeyPress);
             // 
             // txt_secondresidence
             // 
@@ -342,6 +346,7 @@
             this.txt_secondresidence.Name = "txt_secondresidence";
             this.txt_secondresidence.Size = new System.Drawing.Size(116, 20);
             this.txt_secondresidence.TabIndex = 34;
+            this.txt_secondresidence.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_secondresidence_KeyPress);
             // 
             // btn_toevoegen
             // 
@@ -540,7 +545,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(562, 262);
+            this.ClientSize = new System.Drawing.Size(580, 262);
             this.Controls.Add(this.email_lbl);
             this.Controls.Add(this.faxnumber_lbl);
             this.Controls.Add(this.secondtelephonenumber_lbl);
