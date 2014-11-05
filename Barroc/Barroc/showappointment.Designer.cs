@@ -32,12 +32,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.txt_nextcontact = new System.Windows.Forms.TextBox();
             this.txt_subject = new System.Windows.Forms.TextBox();
-            this.txt_lastcontact = new System.Windows.Forms.TextBox();
-            this.txt_datofaction = new System.Windows.Forms.TextBox();
             this.btn_save = new System.Windows.Forms.Button();
             this.btn_back = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label3
@@ -76,33 +76,12 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "Subject";
             // 
-            // txt_nextcontact
-            // 
-            this.txt_nextcontact.Location = new System.Drawing.Point(144, 116);
-            this.txt_nextcontact.Name = "txt_nextcontact";
-            this.txt_nextcontact.Size = new System.Drawing.Size(159, 20);
-            this.txt_nextcontact.TabIndex = 7;
-            // 
             // txt_subject
             // 
             this.txt_subject.Location = new System.Drawing.Point(144, 164);
             this.txt_subject.Name = "txt_subject";
             this.txt_subject.Size = new System.Drawing.Size(159, 20);
             this.txt_subject.TabIndex = 8;
-            // 
-            // txt_lastcontact
-            // 
-            this.txt_lastcontact.Location = new System.Drawing.Point(144, 70);
-            this.txt_lastcontact.Name = "txt_lastcontact";
-            this.txt_lastcontact.Size = new System.Drawing.Size(159, 20);
-            this.txt_lastcontact.TabIndex = 9;
-            // 
-            // txt_datofaction
-            // 
-            this.txt_datofaction.Location = new System.Drawing.Point(144, 26);
-            this.txt_datofaction.Name = "txt_datofaction";
-            this.txt_datofaction.Size = new System.Drawing.Size(159, 20);
-            this.txt_datofaction.TabIndex = 10;
             // 
             // btn_save
             // 
@@ -124,18 +103,51 @@
             this.btn_back.UseVisualStyleBackColor = true;
             this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CustomFormat = "dd-MM-yyyy";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(151, 27);
+            this.dateTimePicker1.MinDate = new System.DateTime(2014, 11, 5, 0, 0, 0, 0);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(102, 20);
+            this.dateTimePicker1.TabIndex = 35;
+            this.dateTimePicker1.Value = new System.DateTime(2014, 11, 5, 13, 38, 53, 0);
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.CustomFormat = "dd-MM-yyyy";
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker2.Location = new System.Drawing.Point(151, 71);
+            this.dateTimePicker2.MinDate = new System.DateTime(2014, 11, 5, 0, 0, 0, 0);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(102, 20);
+            this.dateTimePicker2.TabIndex = 36;
+            this.dateTimePicker2.Value = new System.DateTime(2014, 11, 5, 13, 38, 53, 0);
+            // 
+            // dateTimePicker3
+            // 
+            this.dateTimePicker3.CustomFormat = "dd-MM-yyyy";
+            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker3.Location = new System.Drawing.Point(151, 117);
+            this.dateTimePicker3.MinDate = new System.DateTime(2014, 11, 5, 0, 0, 0, 0);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Size = new System.Drawing.Size(102, 20);
+            this.dateTimePicker3.TabIndex = 37;
+            this.dateTimePicker3.Value = new System.DateTime(2014, 11, 5, 13, 38, 53, 0);
+            // 
             // showappointment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(372, 288);
+            this.Controls.Add(this.dateTimePicker3);
+            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.btn_save);
-            this.Controls.Add(this.txt_datofaction);
-            this.Controls.Add(this.txt_lastcontact);
             this.Controls.Add(this.txt_subject);
-            this.Controls.Add(this.txt_nextcontact);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -156,10 +168,10 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btn_save;
-        public System.Windows.Forms.TextBox txt_nextcontact;
         public System.Windows.Forms.TextBox txt_subject;
-        public System.Windows.Forms.TextBox txt_lastcontact;
-        public System.Windows.Forms.TextBox txt_datofaction;
         private System.Windows.Forms.Button btn_back;
+        public System.Windows.Forms.DateTimePicker dateTimePicker1;
+        public System.Windows.Forms.DateTimePicker dateTimePicker2;
+        public System.Windows.Forms.DateTimePicker dateTimePicker3;
     }
 }

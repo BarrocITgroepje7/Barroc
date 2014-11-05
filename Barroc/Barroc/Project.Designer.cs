@@ -54,8 +54,6 @@
             this.txt_software = new System.Windows.Forms.TextBox();
             this.txt_offernumber = new System.Windows.Forms.TextBox();
             this.txt_internalcontactperson = new System.Windows.Forms.TextBox();
-            this.txt_startdate = new System.Windows.Forms.TextBox();
-            this.txt_enddate = new System.Windows.Forms.TextBox();
             this.txt_numberofinvoices = new System.Windows.Forms.TextBox();
             this.btn_toevoegen = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -70,6 +68,8 @@
             this.offernumber_lbl = new System.Windows.Forms.Label();
             this.internalcontactperson_lbl = new System.Windows.Forms.Label();
             this.numberofinvooices_lbl = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.Project_grid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -298,20 +298,6 @@
             this.txt_internalcontactperson.Size = new System.Drawing.Size(143, 20);
             this.txt_internalcontactperson.TabIndex = 27;
             // 
-            // txt_startdate
-            // 
-            this.txt_startdate.Location = new System.Drawing.Point(1045, 102);
-            this.txt_startdate.Name = "txt_startdate";
-            this.txt_startdate.Size = new System.Drawing.Size(143, 20);
-            this.txt_startdate.TabIndex = 28;
-            // 
-            // txt_enddate
-            // 
-            this.txt_enddate.Location = new System.Drawing.Point(1045, 133);
-            this.txt_enddate.Name = "txt_enddate";
-            this.txt_enddate.Size = new System.Drawing.Size(143, 20);
-            this.txt_enddate.TabIndex = 29;
-            // 
             // txt_numberofinvoices
             // 
             this.txt_numberofinvoices.Location = new System.Drawing.Point(1045, 161);
@@ -466,12 +452,36 @@
             this.numberofinvooices_lbl.Text = "1";
             this.numberofinvooices_lbl.Click += new System.EventHandler(this.numberofinvooices_lbl_Click);
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CustomFormat = "dd-MM-yyyy";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(1045, 99);
+            this.dateTimePicker1.MinDate = new System.DateTime(2014, 11, 5, 0, 0, 0, 0);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(102, 20);
+            this.dateTimePicker1.TabIndex = 44;
+            this.dateTimePicker1.Value = new System.DateTime(2014, 11, 5, 13, 38, 53, 0);
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.CustomFormat = "dd-MM-yyyy";
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker2.Location = new System.Drawing.Point(1045, 130);
+            this.dateTimePicker2.MinDate = new System.DateTime(2014, 11, 5, 0, 0, 0, 0);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(102, 20);
+            this.dateTimePicker2.TabIndex = 45;
+            this.dateTimePicker2.Value = new System.DateTime(2014, 11, 5, 13, 38, 53, 0);
+            // 
             // Project
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(1197, 276);
+            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.numberofinvooices_lbl);
             this.Controls.Add(this.internalcontactperson_lbl);
             this.Controls.Add(this.offernumber_lbl);
@@ -486,8 +496,6 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btn_toevoegen);
             this.Controls.Add(this.txt_numberofinvoices);
-            this.Controls.Add(this.txt_enddate);
-            this.Controls.Add(this.txt_startdate);
             this.Controls.Add(this.txt_internalcontactperson);
             this.Controls.Add(this.txt_offernumber);
             this.Controls.Add(this.txt_software);
@@ -551,8 +559,6 @@
         private System.Windows.Forms.TextBox txt_software;
         private System.Windows.Forms.TextBox txt_offernumber;
         private System.Windows.Forms.TextBox txt_internalcontactperson;
-        private System.Windows.Forms.TextBox txt_startdate;
-        private System.Windows.Forms.TextBox txt_enddate;
         private System.Windows.Forms.TextBox txt_numberofinvoices;
         private System.Windows.Forms.Button btn_toevoegen;
         private System.Windows.Forms.TextBox textBox1;
@@ -567,5 +573,7 @@
         private System.Windows.Forms.Label offernumber_lbl;
         private System.Windows.Forms.Label internalcontactperson_lbl;
         private System.Windows.Forms.Label numberofinvooices_lbl;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
     }
 }

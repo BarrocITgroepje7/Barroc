@@ -19,6 +19,8 @@ namespace Barroc
         public Project(ConnectionManager conn)
         {
             InitializeComponent();
+            dateTimePicker1.MinDate = DateTime.Now.Date;
+            dateTimePicker2.MinDate = DateTime.Now.Date;
             this.conn = conn;
             back_btn.Visible = false;
 
@@ -67,8 +69,8 @@ namespace Barroc
             cmd.Parameters.Add(new SqlParameter("@Software", txt_software.Text));
             cmd.Parameters.Add(new SqlParameter("@Offer_number", txt_offernumber.Text));
             cmd.Parameters.Add(new SqlParameter("@Internal_contact_person", txt_internalcontactperson.Text));
-            cmd.Parameters.Add(new SqlParameter("@Start_date", txt_startdate.Text));
-            cmd.Parameters.Add(new SqlParameter("@End_date", txt_enddate.Text));
+            cmd.Parameters.Add(new SqlParameter("@Start_date", this.dateTimePicker1.Text));
+            cmd.Parameters.Add(new SqlParameter("@End_date", this.dateTimePicker2.Text));
             cmd.Parameters.Add(new SqlParameter("@Nmber_of_invoices", txt_numberofinvoices.Text));
 
             cmd.Connection.Open();
@@ -109,8 +111,8 @@ namespace Barroc
             form.txt_software.Text = Project_grid.Rows[update].Cells[6].Value.ToString();
             form.txt_offernumber.Text = Project_grid.Rows[update].Cells[7].Value.ToString();
             form.txt_internalcontactperson.Text = Project_grid.Rows[update].Cells[8].Value.ToString();
-            form.txt_startdate.Text = Project_grid.Rows[update].Cells[9].Value.ToString();
-            form.txt_enddate.Text = Project_grid.Rows[update].Cells[10].Value.ToString();
+            form.dateTimePicker1.Text = Project_grid.Rows[update].Cells[9].Value.ToString();
+            form.dateTimePicker2.Text = Project_grid.Rows[update].Cells[10].Value.ToString();
             form.txt_numberofinvoices.Text = Project_grid.Rows[update].Cells[11].Value.ToString();
             form.ShowDialog();
             this.Close();

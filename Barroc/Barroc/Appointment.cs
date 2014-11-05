@@ -94,9 +94,9 @@ namespace Barroc
 
             showappointment = new showappointment(id);
 
-            showappointment.txt_datofaction.Text = Appointment_grid.Rows[update].Cells[2].Value.ToString();
-            showappointment.txt_lastcontact.Text = Appointment_grid.Rows[update].Cells[3].Value.ToString();
-            showappointment.txt_nextcontact.Text = Appointment_grid.Rows[update].Cells[4].Value.ToString();
+            showappointment.dateTimePicker1.Text = Appointment_grid.Rows[update].Cells[2].Value.ToString();
+            showappointment.dateTimePicker2.Text = Appointment_grid.Rows[update].Cells[3].Value.ToString();
+            showappointment.dateTimePicker3.Text = Appointment_grid.Rows[update].Cells[4].Value.ToString();
             showappointment.txt_subject.Text = Appointment_grid.Rows[update].Cells[5].Value.ToString();
             showappointment.ShowDialog();
             this.Close();

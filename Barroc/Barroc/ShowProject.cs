@@ -19,6 +19,8 @@ namespace Barroc
         public ShowProject(string project_id)
         {
             InitializeComponent();
+            dateTimePicker1.MinDate = DateTime.Now.Date;
+            dateTimePicker2.MinDate = DateTime.Now.Date;
             this.project_id = project_id;
         }
 
@@ -38,8 +40,8 @@ namespace Barroc
             cmd.Parameters.AddWithValue("@Software", txt_software.Text);
             cmd.Parameters.AddWithValue("@Offer_number", txt_offernumber.Text);
             cmd.Parameters.AddWithValue("@Internal_contact_person", txt_internalcontactperson.Text);
-            cmd.Parameters.AddWithValue("@Start_date", txt_startdate.Text);
-            cmd.Parameters.AddWithValue("@End_date", txt_enddate.Text);
+            cmd.Parameters.AddWithValue("@Start_date", this.dateTimePicker1.Text);
+            cmd.Parameters.AddWithValue("@End_date", this.dateTimePicker2.Text);
             cmd.Parameters.AddWithValue("@Nmber_of_invoices", txt_numberofinvoices.Text);
             cmd.Connection.Open();
             cmd.ExecuteNonQuery();

@@ -19,6 +19,9 @@ namespace Barroc
         public showappointment(string appointment_id)
         {
             InitializeComponent();
+            dateTimePicker1.MinDate = DateTime.Now.Date;
+            dateTimePicker2.MinDate = DateTime.Now.Date;
+            dateTimePicker3.MinDate = DateTime.Now.Date;
             this.appointment_id = appointment_id;
         }
 
@@ -26,9 +29,9 @@ namespace Barroc
         {
             string sqlupdate = "Update [Appointments] Set [Date_of_Action] = @Date_of_Action,[Last_contact] = @Last_contact,[Next_Action] = @Next_Action,[Subject] = @Subject WHERE Appointments_id=" + appointment_id;
             SqlCommand cmd = new SqlCommand(sqlupdate, conn.GetConnection());
-            cmd.Parameters.AddWithValue("@Date_of_Action", txt_datofaction.Text);
-            cmd.Parameters.AddWithValue("@Last_contact", txt_lastcontact.Text);
-            cmd.Parameters.AddWithValue("@Next_Action", txt_nextcontact.Text);
+            cmd.Parameters.AddWithValue("@Date_of_Action", this.dateTimePicker1.Text);
+            cmd.Parameters.AddWithValue("@Last_contact", this.dateTimePicker2.Text);
+            cmd.Parameters.AddWithValue("@Next_Action", this.dateTimePicker3.Text);
             cmd.Parameters.AddWithValue("@Subject", txt_subject.Text);
             cmd.Connection.Open();
             cmd.ExecuteNonQuery();
