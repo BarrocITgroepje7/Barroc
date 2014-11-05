@@ -19,6 +19,10 @@ namespace Barroc
         public Appointment(ConnectionManager conn)
         {
             InitializeComponent();
+            dateTimePicker1.MinDate = DateTime.Now.Date;
+            dateTimePicker2.MinDate = DateTime.Now.Date;
+            dateTimePicker3.MinDate = DateTime.Now.Date;
+
             this.conn = conn;
             back_btn.Visible = false;
 
