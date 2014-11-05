@@ -253,6 +253,7 @@
             this.txt_projectname.Name = "txt_projectname";
             this.txt_projectname.Size = new System.Drawing.Size(143, 20);
             this.txt_projectname.TabIndex = 21;
+            this.txt_projectname.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_projectname_KeyPress);
             // 
             // txt_status
             // 
@@ -260,6 +261,7 @@
             this.txt_status.Name = "txt_status";
             this.txt_status.Size = new System.Drawing.Size(143, 20);
             this.txt_status.TabIndex = 22;
+            this.txt_status.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_status_KeyPress);
             // 
             // txt_applications
             // 
@@ -267,6 +269,7 @@
             this.txt_applications.Name = "txt_applications";
             this.txt_applications.Size = new System.Drawing.Size(143, 20);
             this.txt_applications.TabIndex = 23;
+            this.txt_applications.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_applications_KeyPress);
             // 
             // txt_hardware
             // 
@@ -274,6 +277,7 @@
             this.txt_hardware.Name = "txt_hardware";
             this.txt_hardware.Size = new System.Drawing.Size(143, 20);
             this.txt_hardware.TabIndex = 24;
+            this.txt_hardware.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_hardware_KeyPress);
             // 
             // txt_software
             // 
@@ -281,6 +285,7 @@
             this.txt_software.Name = "txt_software";
             this.txt_software.Size = new System.Drawing.Size(143, 20);
             this.txt_software.TabIndex = 25;
+            this.txt_software.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_software_KeyPress);
             // 
             // txt_offernumber
             // 
@@ -297,6 +302,7 @@
             this.txt_internalcontactperson.Name = "txt_internalcontactperson";
             this.txt_internalcontactperson.Size = new System.Drawing.Size(143, 20);
             this.txt_internalcontactperson.TabIndex = 27;
+            this.txt_internalcontactperson.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_internalcontactperson_KeyPress);
             // 
             // txt_numberofinvoices
             // 
@@ -355,6 +361,7 @@
             this.customerid_lbl.Size = new System.Drawing.Size(13, 13);
             this.customerid_lbl.TabIndex = 35;
             this.customerid_lbl.Text = "1";
+            this.customerid_lbl.Click += new System.EventHandler(this.customerid_lbl_Click);
             // 
             // projectname_lbl
             // 
