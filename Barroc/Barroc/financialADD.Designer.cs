@@ -45,18 +45,14 @@
             this.label7 = new System.Windows.Forms.Label();
             this.ADD_btn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.Creditworthy = new System.Windows.Forms.TextBox();
-            this.CHECK = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.creditworthy_lbl = new System.Windows.Forms.Label();
             this.balance_lbl = new System.Windows.Forms.Label();
             this.revenueamount_lbl = new System.Windows.Forms.Label();
             this.limit_lbl = new System.Windows.Forms.Label();
             this.accountnumber_lbl = new System.Windows.Forms.Label();
-            this.bkrcheck_lbl = new System.Windows.Forms.Label();
             this.bankcode_lbl = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // Balance
@@ -210,40 +206,6 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Creditworthy";
             // 
-            // Creditworthy
-            // 
-            this.Creditworthy.Location = new System.Drawing.Point(114, 73);
-            this.Creditworthy.Name = "Creditworthy";
-            this.Creditworthy.Size = new System.Drawing.Size(100, 20);
-            this.Creditworthy.TabIndex = 21;
-            this.Creditworthy.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Creditworthy_KeyPress);
-            // 
-            // CHECK
-            // 
-            this.CHECK.Location = new System.Drawing.Point(114, 200);
-            this.CHECK.Name = "CHECK";
-            this.CHECK.Size = new System.Drawing.Size(100, 20);
-            this.CHECK.TabIndex = 22;
-            this.CHECK.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CHECK_KeyPress);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(220, 76);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(90, 13);
-            this.label9.TabIndex = 23;
-            this.label9.Text = "* Only True/False";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(220, 202);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(90, 13);
-            this.label11.TabIndex = 24;
-            this.label11.Text = "* Only True/False";
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(12, 344);
@@ -253,18 +215,6 @@
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // creditworthy_lbl
-            // 
-            this.creditworthy_lbl.AutoSize = true;
-            this.creditworthy_lbl.BackColor = System.Drawing.SystemColors.Window;
-            this.creditworthy_lbl.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.creditworthy_lbl.Location = new System.Drawing.Point(121, 76);
-            this.creditworthy_lbl.Name = "creditworthy_lbl";
-            this.creditworthy_lbl.Size = new System.Drawing.Size(29, 13);
-            this.creditworthy_lbl.TabIndex = 26;
-            this.creditworthy_lbl.Text = "True";
-            this.creditworthy_lbl.Click += new System.EventHandler(this.creditworthy_lbl_Click);
             // 
             // balance_lbl
             // 
@@ -314,18 +264,6 @@
             this.accountnumber_lbl.Text = "0132645915467";
             this.accountnumber_lbl.Click += new System.EventHandler(this.accountnumber_lbl_Click);
             // 
-            // bkrcheck_lbl
-            // 
-            this.bkrcheck_lbl.AutoSize = true;
-            this.bkrcheck_lbl.BackColor = System.Drawing.SystemColors.Window;
-            this.bkrcheck_lbl.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.bkrcheck_lbl.Location = new System.Drawing.Point(121, 203);
-            this.bkrcheck_lbl.Name = "bkrcheck_lbl";
-            this.bkrcheck_lbl.Size = new System.Drawing.Size(29, 13);
-            this.bkrcheck_lbl.TabIndex = 31;
-            this.bkrcheck_lbl.Text = "True";
-            this.bkrcheck_lbl.Click += new System.EventHandler(this.bkrcheck_lbl_Click);
-            // 
             // bankcode_lbl
             // 
             this.bankcode_lbl.AutoSize = true;
@@ -338,24 +276,36 @@
             this.bankcode_lbl.Text = "0546312987";
             this.bankcode_lbl.Click += new System.EventHandler(this.bankcode_lbl_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(114, 72);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(100, 21);
+            this.comboBox1.TabIndex = 33;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(114, 198);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(100, 21);
+            this.comboBox2.TabIndex = 34;
+            // 
             // financialADD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(407, 388);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.bankcode_lbl);
-            this.Controls.Add(this.bkrcheck_lbl);
             this.Controls.Add(this.accountnumber_lbl);
             this.Controls.Add(this.limit_lbl);
             this.Controls.Add(this.revenueamount_lbl);
             this.Controls.Add(this.balance_lbl);
-            this.Controls.Add(this.creditworthy_lbl);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.CHECK);
-            this.Controls.Add(this.Creditworthy);
             this.Controls.Add(this.ADD_btn);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.CustomerName_lbl);
@@ -401,17 +351,13 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button ADD_btn;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox Creditworthy;
-        private System.Windows.Forms.TextBox CHECK;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label creditworthy_lbl;
         private System.Windows.Forms.Label balance_lbl;
         private System.Windows.Forms.Label revenueamount_lbl;
         private System.Windows.Forms.Label limit_lbl;
         private System.Windows.Forms.Label accountnumber_lbl;
-        private System.Windows.Forms.Label bkrcheck_lbl;
         private System.Windows.Forms.Label bankcode_lbl;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }
