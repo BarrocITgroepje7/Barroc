@@ -33,13 +33,11 @@
             this.btn_add = new System.Windows.Forms.Button();
             this.btn_back = new System.Windows.Forms.Button();
             this.back_btn = new System.Windows.Forms.Button();
-            this.lbl_Cutomerid = new System.Windows.Forms.Label();
             this.lbl_Cutomername = new System.Windows.Forms.Label();
             this.lbl_adress = new System.Windows.Forms.Label();
             this.lbl_secondadress = new System.Windows.Forms.Label();
             this.lbl_zipcode = new System.Windows.Forms.Label();
             this.lbl_residence = new System.Windows.Forms.Label();
-            this.txt_customerid = new System.Windows.Forms.TextBox();
             this.txt_secondadress = new System.Windows.Forms.TextBox();
             this.txt_residence = new System.Windows.Forms.TextBox();
             this.txt_zipcode = new System.Windows.Forms.TextBox();
@@ -131,15 +129,6 @@
             this.back_btn.UseVisualStyleBackColor = true;
             this.back_btn.Click += new System.EventHandler(this.back_btn_Click);
             // 
-            // lbl_Cutomerid
-            // 
-            this.lbl_Cutomerid.AutoSize = true;
-            this.lbl_Cutomerid.Location = new System.Drawing.Point(611, 19);
-            this.lbl_Cutomerid.Name = "lbl_Cutomerid";
-            this.lbl_Cutomerid.Size = new System.Drawing.Size(69, 13);
-            this.lbl_Cutomerid.TabIndex = 6;
-            this.lbl_Cutomerid.Text = "Customer ID*";
-            // 
             // lbl_Cutomername
             // 
             this.lbl_Cutomername.AutoSize = true;
@@ -184,13 +173,6 @@
             this.lbl_residence.Size = new System.Drawing.Size(62, 13);
             this.lbl_residence.TabIndex = 11;
             this.lbl_residence.Text = "Residence*";
-            // 
-            // txt_customerid
-            // 
-            this.txt_customerid.Location = new System.Drawing.Point(686, 12);
-            this.txt_customerid.Name = "txt_customerid";
-            this.txt_customerid.Size = new System.Drawing.Size(100, 20);
-            this.txt_customerid.TabIndex = 12;
             // 
             // txt_secondadress
             // 
@@ -558,7 +540,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(1271, 262);
+            this.ClientSize = new System.Drawing.Size(562, 262);
             this.Controls.Add(this.email_lbl);
             this.Controls.Add(this.faxnumber_lbl);
             this.Controls.Add(this.secondtelephonenumber_lbl);
@@ -597,13 +579,11 @@
             this.Controls.Add(this.txt_zipcode);
             this.Controls.Add(this.txt_residence);
             this.Controls.Add(this.txt_secondadress);
-            this.Controls.Add(this.txt_customerid);
             this.Controls.Add(this.lbl_residence);
             this.Controls.Add(this.lbl_zipcode);
             this.Controls.Add(this.lbl_secondadress);
             this.Controls.Add(this.lbl_adress);
             this.Controls.Add(this.lbl_Cutomername);
-            this.Controls.Add(this.lbl_Cutomerid);
             this.Controls.Add(this.back_btn);
             this.Controls.Add(this.btn_add);
             this.Controls.Add(this.btn_invisible);
@@ -626,13 +606,11 @@
         private System.Windows.Forms.Button btn_add;
         private System.Windows.Forms.Button btn_back;
         private System.Windows.Forms.Button back_btn;
-        private System.Windows.Forms.Label lbl_Cutomerid;
         private System.Windows.Forms.Label lbl_Cutomername;
         private System.Windows.Forms.Label lbl_adress;
         private System.Windows.Forms.Label lbl_secondadress;
         private System.Windows.Forms.Label lbl_zipcode;
         private System.Windows.Forms.Label lbl_residence;
-        private System.Windows.Forms.TextBox txt_customerid;
         private System.Windows.Forms.TextBox txt_secondadress;
         private System.Windows.Forms.TextBox txt_residence;
         private System.Windows.Forms.TextBox txt_zipcode;
