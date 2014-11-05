@@ -50,6 +50,13 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.creditworthy_lbl = new System.Windows.Forms.Label();
+            this.balance_lbl = new System.Windows.Forms.Label();
+            this.revenueamount_lbl = new System.Windows.Forms.Label();
+            this.limit_lbl = new System.Windows.Forms.Label();
+            this.accountnumber_lbl = new System.Windows.Forms.Label();
+            this.bkrcheck_lbl = new System.Windows.Forms.Label();
+            this.bankcode_lbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Balance
@@ -58,6 +65,8 @@
             this.Balance.Name = "Balance";
             this.Balance.Size = new System.Drawing.Size(100, 20);
             this.Balance.TabIndex = 1;
+            this.Balance.TextChanged += new System.EventHandler(this.Balance_TextChanged);
+            this.Balance.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Balance_KeyPress);
             // 
             // limit
             // 
@@ -65,6 +74,8 @@
             this.limit.Name = "limit";
             this.limit.Size = new System.Drawing.Size(100, 20);
             this.limit.TabIndex = 2;
+            this.limit.TextChanged += new System.EventHandler(this.limit_TextChanged);
+            this.limit.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.limit_KeyPress);
             // 
             // bankcode
             // 
@@ -72,6 +83,7 @@
             this.bankcode.Name = "bankcode";
             this.bankcode.Size = new System.Drawing.Size(100, 20);
             this.bankcode.TabIndex = 4;
+            this.bankcode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.bankcode_KeyPress);
             // 
             // number
             // 
@@ -79,6 +91,8 @@
             this.number.Name = "number";
             this.number.Size = new System.Drawing.Size(100, 20);
             this.number.TabIndex = 5;
+            this.number.TextChanged += new System.EventHandler(this.number_TextChanged);
+            this.number.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.number_KeyPress);
             // 
             // amount
             // 
@@ -86,6 +100,8 @@
             this.amount.Name = "amount";
             this.amount.Size = new System.Drawing.Size(100, 20);
             this.amount.TabIndex = 6;
+            this.amount.TextChanged += new System.EventHandler(this.amount_TextChanged);
+            this.amount.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.amount_KeyPress);
             // 
             // label2
             // 
@@ -200,6 +216,7 @@
             this.Creditworthy.Name = "Creditworthy";
             this.Creditworthy.Size = new System.Drawing.Size(100, 20);
             this.Creditworthy.TabIndex = 21;
+            this.Creditworthy.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Creditworthy_KeyPress);
             // 
             // CHECK
             // 
@@ -207,6 +224,7 @@
             this.CHECK.Name = "CHECK";
             this.CHECK.Size = new System.Drawing.Size(100, 20);
             this.CHECK.TabIndex = 22;
+            this.CHECK.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CHECK_KeyPress);
             // 
             // label9
             // 
@@ -236,12 +254,103 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // creditworthy_lbl
+            // 
+            this.creditworthy_lbl.AutoSize = true;
+            this.creditworthy_lbl.BackColor = System.Drawing.SystemColors.Window;
+            this.creditworthy_lbl.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.creditworthy_lbl.Location = new System.Drawing.Point(121, 76);
+            this.creditworthy_lbl.Name = "creditworthy_lbl";
+            this.creditworthy_lbl.Size = new System.Drawing.Size(29, 13);
+            this.creditworthy_lbl.TabIndex = 26;
+            this.creditworthy_lbl.Text = "True";
+            this.creditworthy_lbl.Click += new System.EventHandler(this.creditworthy_lbl_Click);
+            // 
+            // balance_lbl
+            // 
+            this.balance_lbl.AutoSize = true;
+            this.balance_lbl.BackColor = System.Drawing.SystemColors.Window;
+            this.balance_lbl.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.balance_lbl.Location = new System.Drawing.Point(121, 103);
+            this.balance_lbl.Name = "balance_lbl";
+            this.balance_lbl.Size = new System.Drawing.Size(25, 13);
+            this.balance_lbl.TabIndex = 27;
+            this.balance_lbl.Text = "550";
+            this.balance_lbl.Click += new System.EventHandler(this.balance_lbl_Click);
+            // 
+            // revenueamount_lbl
+            // 
+            this.revenueamount_lbl.AutoSize = true;
+            this.revenueamount_lbl.BackColor = System.Drawing.SystemColors.Window;
+            this.revenueamount_lbl.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.revenueamount_lbl.Location = new System.Drawing.Point(121, 126);
+            this.revenueamount_lbl.Name = "revenueamount_lbl";
+            this.revenueamount_lbl.Size = new System.Drawing.Size(31, 13);
+            this.revenueamount_lbl.TabIndex = 28;
+            this.revenueamount_lbl.Text = "1000";
+            this.revenueamount_lbl.Click += new System.EventHandler(this.revenueamount_lbl_Click);
+            // 
+            // limit_lbl
+            // 
+            this.limit_lbl.AutoSize = true;
+            this.limit_lbl.BackColor = System.Drawing.SystemColors.Window;
+            this.limit_lbl.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.limit_lbl.Location = new System.Drawing.Point(121, 151);
+            this.limit_lbl.Name = "limit_lbl";
+            this.limit_lbl.Size = new System.Drawing.Size(31, 13);
+            this.limit_lbl.TabIndex = 29;
+            this.limit_lbl.Text = "1500";
+            this.limit_lbl.Click += new System.EventHandler(this.limit_lbl_Click);
+            // 
+            // accountnumber_lbl
+            // 
+            this.accountnumber_lbl.AutoSize = true;
+            this.accountnumber_lbl.BackColor = System.Drawing.SystemColors.Window;
+            this.accountnumber_lbl.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.accountnumber_lbl.Location = new System.Drawing.Point(121, 177);
+            this.accountnumber_lbl.Name = "accountnumber_lbl";
+            this.accountnumber_lbl.Size = new System.Drawing.Size(85, 13);
+            this.accountnumber_lbl.TabIndex = 30;
+            this.accountnumber_lbl.Text = "0132645915467";
+            this.accountnumber_lbl.Click += new System.EventHandler(this.accountnumber_lbl_Click);
+            // 
+            // bkrcheck_lbl
+            // 
+            this.bkrcheck_lbl.AutoSize = true;
+            this.bkrcheck_lbl.BackColor = System.Drawing.SystemColors.Window;
+            this.bkrcheck_lbl.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.bkrcheck_lbl.Location = new System.Drawing.Point(121, 203);
+            this.bkrcheck_lbl.Name = "bkrcheck_lbl";
+            this.bkrcheck_lbl.Size = new System.Drawing.Size(29, 13);
+            this.bkrcheck_lbl.TabIndex = 31;
+            this.bkrcheck_lbl.Text = "True";
+            this.bkrcheck_lbl.Click += new System.EventHandler(this.bkrcheck_lbl_Click);
+            // 
+            // bankcode_lbl
+            // 
+            this.bankcode_lbl.AutoSize = true;
+            this.bankcode_lbl.BackColor = System.Drawing.SystemColors.Window;
+            this.bankcode_lbl.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.bankcode_lbl.Location = new System.Drawing.Point(121, 228);
+            this.bankcode_lbl.Name = "bankcode_lbl";
+            this.bankcode_lbl.Size = new System.Drawing.Size(67, 13);
+            this.bankcode_lbl.TabIndex = 32;
+            this.bankcode_lbl.Text = "0546312987";
+            this.bankcode_lbl.Click += new System.EventHandler(this.bankcode_lbl_Click);
+            // 
             // financialADD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(407, 388);
+            this.Controls.Add(this.bankcode_lbl);
+            this.Controls.Add(this.bkrcheck_lbl);
+            this.Controls.Add(this.accountnumber_lbl);
+            this.Controls.Add(this.limit_lbl);
+            this.Controls.Add(this.revenueamount_lbl);
+            this.Controls.Add(this.balance_lbl);
+            this.Controls.Add(this.creditworthy_lbl);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label9);
@@ -297,5 +406,12 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label creditworthy_lbl;
+        private System.Windows.Forms.Label balance_lbl;
+        private System.Windows.Forms.Label revenueamount_lbl;
+        private System.Windows.Forms.Label limit_lbl;
+        private System.Windows.Forms.Label accountnumber_lbl;
+        private System.Windows.Forms.Label bkrcheck_lbl;
+        private System.Windows.Forms.Label bankcode_lbl;
     }
 }

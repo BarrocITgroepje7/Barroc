@@ -123,5 +123,100 @@ namespace Barroc
             this.Close();
             
         }
+
+        private void creditworthy_lbl_Click(object sender, EventArgs e)
+        {
+            creditworthy_lbl.Visible = false;
+        }
+
+        private void balance_lbl_Click(object sender, EventArgs e)
+        {
+            balance_lbl.Visible = false;
+        }
+
+        private void revenueamount_lbl_Click(object sender, EventArgs e)
+        {
+            revenueamount_lbl.Visible = false;
+        }
+
+        private void limit_lbl_Click(object sender, EventArgs e)
+        {
+            limit_lbl.Visible = false;
+        }
+
+        private void accountnumber_lbl_Click(object sender, EventArgs e)
+        {
+            accountnumber_lbl.Visible = false;
+        }
+
+        private void bkrcheck_lbl_Click(object sender, EventArgs e)
+        {
+            bkrcheck_lbl.Visible = false;
+        }
+
+        private void bankcode_lbl_Click(object sender, EventArgs e)
+        {
+            bankcode_lbl.Visible = false;
+        }
+
+        private void Balance_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void amount_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void limit_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Balance_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+                e.Handled = true;
+        }
+
+        private void amount_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+                e.Handled = true;
+        }
+
+        private void limit_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+                e.Handled = true;
+        }
+
+        private void number_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void number_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+                e.Handled = true;
+        }
+
+        private void CHECK_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+                e.Handled = true;
+        }
+
+        private void bankcode_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+                e.Handled = true;
+        }
+
+        private void Creditworthy_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
+            e.Handled = true;
+        }
     }
 }
