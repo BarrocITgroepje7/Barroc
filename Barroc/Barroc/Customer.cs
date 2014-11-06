@@ -17,6 +17,7 @@ namespace Barroc
     {
         ConnectionManager conn = new ConnectionManager();
         showcustomer form;
+        sure askform;
         DataTable dt = new DataTable();
         DataSet ds = new DataSet();
         public Customer(ConnectionManager conn)
@@ -64,21 +65,32 @@ namespace Barroc
 
         private void btn_invisible_Click(object sender, EventArgs e)
         {
-            DataGridViewRow row = Customer_grid.SelectedRows[0];
-            string id = row.Cells[0].Value.ToString();
+            askform = new sure();
+            DialogResult dialog = askform.ShowDialog();
+            
+            if(dialog == DialogResult.OK)
+            {
+                DataGridViewRow row = Customer_grid.SelectedRows[0];
+                string id = row.Cells[0].Value.ToString();
 
-            SqlCommand SQLda = new SqlCommand("DELETE FROM Customer WHERE Customer_id=" + id, conn.GetConnection());
-            SQLda.Connection.Open();
-            SQLda.ExecuteNonQuery();
-            SQLda.Connection.Close();
+                SqlCommand SQLda = new SqlCommand("DELETE FROM Customer WHERE Customer_id=" + id, conn.GetConnection());
+                SQLda.Connection.Open();
+                SQLda.ExecuteNonQuery();
+                SQLda.Connection.Close();
 
-            SqlDataAdapter SQLs = new SqlDataAdapter("SELECT Customer_ID,CustomerName,Adress,Zipcode,Residence,Second_Adress,Second_Zipcode,Seconde_Residence,Contactperson,Initials,Telephone_number,Second_Telephone_Number,Fax_number,Email FROM Customer", conn.GetConnection());
+                SqlDataAdapter SQLs = new SqlDataAdapter("SELECT Customer_ID,CustomerName,Adress,Zipcode,Residence,Second_Adress,Second_Zipcode,Seconde_Residence,Contactperson,Initials,Telephone_number,Second_Telephone_Number,Fax_number,Email FROM Customer", conn.GetConnection());
 
-            DataTable dt = new DataTable();
-            SQLs.Fill(dt);
+                DataTable dt = new DataTable();
+                SQLs.Fill(dt);
 
-            Customer_grid.DataSource = dt;
-            conn.CloseConnection();
+                Customer_grid.DataSource = dt;
+                conn.CloseConnection();
+            }
+            else if (dialog == DialogResult.Cancel)
+            {
+                askform.Close();
+            }
+
         }
 
         private void btn_add_Click(object sender, EventArgs e)
