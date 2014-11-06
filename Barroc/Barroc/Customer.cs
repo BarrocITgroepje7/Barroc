@@ -114,8 +114,9 @@ namespace Barroc
         private void btn_toevoegen_Click(object sender, EventArgs e)
         {
             Regex rx = new Regex("^[a-zA-Z0-9]{1,20}@[a-zA-Z0-9]{1,7}.[a-zA-Z]{2,3}$");
-            Regex rex = new Regex("^[1-9]{1}[0-9]{3}[A-Z]{2}$");
-            if(!rx.IsMatch(txt_email.Text) || !rex.IsMatch(txt_zipcode.Text))
+            Regex rex = new Regex("^[1-9]{1}[0-9]{3}\\s[A-Z]{2}$");
+            Regex Rex = new Regex("^[0-9]{2,3}[0-9]{7}$");
+            if(!rx.IsMatch(txt_email.Text) || !rex.IsMatch(txt_zipcode.Text) || !Rex.IsMatch(txt_telephonenumber.Text))
             {
                 MessageBox.Show("not succed");
             }
