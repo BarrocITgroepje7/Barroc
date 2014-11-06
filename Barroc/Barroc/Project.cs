@@ -19,6 +19,8 @@ namespace Barroc
         public Project(ConnectionManager conn)
         {
             InitializeComponent();
+            comboBox1.Items.Add("True");
+            comboBox1.Items.Add("False");
             dateTimePicker1.MinDate = DateTime.Now.Date;
             dateTimePicker2.MinDate = DateTime.Now.Date;
             this.conn = conn;
@@ -58,10 +60,11 @@ namespace Barroc
 
         private void btn_toevoegen_Click(object sender, EventArgs e)
         {
-            string sql = "INSERT INTO Projects (Project_ID, Customer_ID, Project_name, Status, Applications, Hardware, Software, Offer_number, Internal_contact_person, Start_date, End_date, Nmber_of_invoices) values (@Project_ID,@Customer_ID,@Project_name,@Status,@Applications,@Hardware,@Software,@Offer_number,@Internal_contact_person,@Start_date,@End_date,@Nmber_of_invoices)";
+            string sql = "INSERT INTO Projects (Project_ID, Customer_ID, Maintenance_Contract, Project_name, Status, Applications, Hardware, Software, Offer_number, Internal_contact_person, Start_date, End_date, Nmber_of_invoices) values (@Project_ID,@Customer_ID,@Maintenance_Contract,@Project_name,@Status,@Applications,@Hardware,@Software,@Offer_number,@Internal_contact_person,@Start_date,@End_date,@Nmber_of_invoices)";
             SqlCommand cmd = new SqlCommand(sql, conn.GetConnection());
             cmd.Parameters.Add(new SqlParameter("@Project_ID", txt_projectid.Text));
             cmd.Parameters.Add(new SqlParameter("@Customer_ID", txt_customerid.Text));
+            cmd.Parameters.Add(new SqlParameter("@Maintenance_Contract", comboBox1.Text));
             cmd.Parameters.Add(new SqlParameter("@Project_name", txt_projectname.Text));
             cmd.Parameters.Add(new SqlParameter("@Status", txt_status.Text));
             cmd.Parameters.Add(new SqlParameter("@Applications", txt_applications.Text));
@@ -105,15 +108,16 @@ namespace Barroc
 
             form.txt_customerid.Text = Project_grid.Rows[update].Cells[1].Value.ToString();
             form.txt_projectname.Text = Project_grid.Rows[update].Cells[2].Value.ToString();
-            form.txt_status.Text = Project_grid.Rows[update].Cells[3].Value.ToString();
-            form.txt_applications.Text = Project_grid.Rows[update].Cells[4].Value.ToString();
-            form.txt_hardware.Text = Project_grid.Rows[update].Cells[5].Value.ToString();
-            form.txt_software.Text = Project_grid.Rows[update].Cells[6].Value.ToString();
-            form.txt_offernumber.Text = Project_grid.Rows[update].Cells[7].Value.ToString();
-            form.txt_internalcontactperson.Text = Project_grid.Rows[update].Cells[8].Value.ToString();
-            form.dateTimePicker1.Text = Project_grid.Rows[update].Cells[9].Value.ToString();
-            form.dateTimePicker2.Text = Project_grid.Rows[update].Cells[10].Value.ToString();
-            form.txt_numberofinvoices.Text = Project_grid.Rows[update].Cells[11].Value.ToString();
+            form.comboBox1.Text = Project_grid.Rows[update].Cells[3].Value.ToString();
+            form.txt_status.Text = Project_grid.Rows[update].Cells[4].Value.ToString();
+            form.txt_applications.Text = Project_grid.Rows[update].Cells[5].Value.ToString();
+            form.txt_hardware.Text = Project_grid.Rows[update].Cells[6].Value.ToString();
+            form.txt_software.Text = Project_grid.Rows[update].Cells[7].Value.ToString();
+            form.txt_offernumber.Text = Project_grid.Rows[update].Cells[8].Value.ToString();
+            form.txt_internalcontactperson.Text = Project_grid.Rows[update].Cells[9].Value.ToString();
+            form.dateTimePicker1.Text = Project_grid.Rows[update].Cells[10].Value.ToString();
+            form.dateTimePicker2.Text = Project_grid.Rows[update].Cells[11].Value.ToString();
+            form.txt_numberofinvoices.Text = Project_grid.Rows[update].Cells[12].Value.ToString();
             form.ShowDialog();
             this.Close();
         }
@@ -239,6 +243,16 @@ namespace Barroc
         {
             if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar) && !char.IsWhiteSpace(e.KeyChar))
                 e.Handled = true;
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

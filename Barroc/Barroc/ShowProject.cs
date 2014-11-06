@@ -19,6 +19,8 @@ namespace Barroc
         public ShowProject(string project_id)
         {
             InitializeComponent();
+            comboBox1.Items.Add("True");
+            comboBox1.Items.Add("False");
             dateTimePicker1.MinDate = DateTime.Now.Date;
             dateTimePicker2.MinDate = DateTime.Now.Date;
             this.project_id = project_id;
@@ -26,14 +28,11 @@ namespace Barroc
 
         private void btn_save_Click(object sender, EventArgs e)
         {
-            string sqlupdate = "Update [Projects] Set [Customer_ID] = @Customer_ID, " +
-            "[Project_name] = @Project_name, [Status] = @Status, [Applications] = @Applications, " +
-            "[Hardware] = @Hardware, [Software] = @Software, [Offer_number] = @Offer_number, " +
-            "[Internal_contact_person] = @Internal_contact_person, [Start_date] = @Start_date, [End_date] = @End_date, " +
-            "[Nmber_of_invoices] = @Nmber_of_invoices WHERE Project_ID=" + project_id;
+            string sqlupdate = "Update [Projects] Set [Customer_ID] = @Customer_ID,[Maintenance_Contract] = @Maintenance_Contract, [Project_name] = @Project_name, [Status] = @Status, [Applications] = @Applications,[Hardware] = @Hardware, [Software] = @Software, [Offer_number] = @Offer_number,[Internal_contact_person] = @Internal_contact_person, [Start_date] = @Start_date, [End_date] = @End_date,[Nmber_of_invoices] = @Nmber_of_invoices WHERE Project_ID=" + project_id;
             SqlCommand cmd = new SqlCommand(sqlupdate, conn.GetConnection());
             cmd.Parameters.AddWithValue("@Customer_ID", txt_customerid.Text);
             cmd.Parameters.AddWithValue("@Project_name", txt_projectname.Text);
+            cmd.Parameters.AddWithValue("@Maintenance_Contract", comboBox1.Text);
             cmd.Parameters.AddWithValue("@Status", txt_status.Text);
             cmd.Parameters.AddWithValue("@Applications", txt_applications.Text);
             cmd.Parameters.AddWithValue("@Hardware", txt_hardware.Text);
@@ -57,6 +56,11 @@ namespace Barroc
             Project Project = new Project(conn);
             Project.Show();
             this.Close();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

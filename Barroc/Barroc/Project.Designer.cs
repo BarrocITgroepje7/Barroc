@@ -70,6 +70,8 @@
             this.numberofinvooices_lbl = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.Project_grid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -144,7 +146,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(686, 74);
+            this.label4.Location = new System.Drawing.Point(686, 96);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 13);
             this.label4.TabIndex = 8;
@@ -153,7 +155,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(720, 105);
+            this.label5.Location = new System.Drawing.Point(720, 127);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(37, 13);
             this.label5.TabIndex = 9;
@@ -162,7 +164,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(693, 136);
+            this.label6.Location = new System.Drawing.Point(693, 158);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(64, 13);
             this.label6.TabIndex = 10;
@@ -171,7 +173,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(704, 165);
+            this.label7.Location = new System.Drawing.Point(704, 184);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(53, 13);
             this.label7.TabIndex = 11;
@@ -249,7 +251,7 @@
             // 
             // txt_projectname
             // 
-            this.txt_projectname.Location = new System.Drawing.Point(766, 71);
+            this.txt_projectname.Location = new System.Drawing.Point(766, 93);
             this.txt_projectname.Name = "txt_projectname";
             this.txt_projectname.Size = new System.Drawing.Size(143, 20);
             this.txt_projectname.TabIndex = 21;
@@ -257,7 +259,7 @@
             // 
             // txt_status
             // 
-            this.txt_status.Location = new System.Drawing.Point(766, 102);
+            this.txt_status.Location = new System.Drawing.Point(766, 124);
             this.txt_status.Name = "txt_status";
             this.txt_status.Size = new System.Drawing.Size(143, 20);
             this.txt_status.TabIndex = 22;
@@ -265,7 +267,7 @@
             // 
             // txt_applications
             // 
-            this.txt_applications.Location = new System.Drawing.Point(766, 133);
+            this.txt_applications.Location = new System.Drawing.Point(766, 155);
             this.txt_applications.Name = "txt_applications";
             this.txt_applications.Size = new System.Drawing.Size(143, 20);
             this.txt_applications.TabIndex = 23;
@@ -273,7 +275,7 @@
             // 
             // txt_hardware
             // 
-            this.txt_hardware.Location = new System.Drawing.Point(766, 162);
+            this.txt_hardware.Location = new System.Drawing.Point(766, 181);
             this.txt_hardware.Name = "txt_hardware";
             this.txt_hardware.Size = new System.Drawing.Size(143, 20);
             this.txt_hardware.TabIndex = 24;
@@ -368,7 +370,7 @@
             this.projectname_lbl.AutoSize = true;
             this.projectname_lbl.BackColor = System.Drawing.SystemColors.Window;
             this.projectname_lbl.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.projectname_lbl.Location = new System.Drawing.Point(773, 74);
+            this.projectname_lbl.Location = new System.Drawing.Point(773, 96);
             this.projectname_lbl.Name = "projectname_lbl";
             this.projectname_lbl.Size = new System.Drawing.Size(69, 13);
             this.projectname_lbl.TabIndex = 36;
@@ -380,7 +382,7 @@
             this.status_lbl.AutoSize = true;
             this.status_lbl.BackColor = System.Drawing.SystemColors.Window;
             this.status_lbl.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.status_lbl.Location = new System.Drawing.Point(773, 105);
+            this.status_lbl.Location = new System.Drawing.Point(773, 127);
             this.status_lbl.Name = "status_lbl";
             this.status_lbl.Size = new System.Drawing.Size(38, 13);
             this.status_lbl.TabIndex = 37;
@@ -392,7 +394,7 @@
             this.applications_lbl.AutoSize = true;
             this.applications_lbl.BackColor = System.Drawing.SystemColors.Window;
             this.applications_lbl.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.applications_lbl.Location = new System.Drawing.Point(773, 136);
+            this.applications_lbl.Location = new System.Drawing.Point(773, 158);
             this.applications_lbl.Name = "applications_lbl";
             this.applications_lbl.Size = new System.Drawing.Size(92, 13);
             this.applications_lbl.TabIndex = 38;
@@ -404,7 +406,7 @@
             this.hardware_lbl.AutoSize = true;
             this.hardware_lbl.BackColor = System.Drawing.SystemColors.Window;
             this.hardware_lbl.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.hardware_lbl.Location = new System.Drawing.Point(773, 165);
+            this.hardware_lbl.Location = new System.Drawing.Point(773, 184);
             this.hardware_lbl.Name = "hardware_lbl";
             this.hardware_lbl.Size = new System.Drawing.Size(38, 13);
             this.hardware_lbl.TabIndex = 39;
@@ -481,12 +483,33 @@
             this.dateTimePicker2.TabIndex = 45;
             this.dateTimePicker2.Value = new System.DateTime(2014, 11, 5, 13, 38, 53, 0);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(645, 74);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(112, 13);
+            this.label2.TabIndex = 46;
+            this.label2.Text = "Maintenance Contract";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(766, 66);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(143, 21);
+            this.comboBox1.TabIndex = 47;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // Project
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(1197, 276);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.numberofinvooices_lbl);
@@ -582,5 +605,7 @@
         private System.Windows.Forms.Label numberofinvooices_lbl;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
