@@ -7,6 +7,7 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -112,36 +113,46 @@ namespace Barroc
 
         private void btn_toevoegen_Click(object sender, EventArgs e)
         {
-            //AreFieldsValid.FieldsValid();
-            string sql = "INSERT INTO Customer(CustomerName,Adress,Zipcode,Residence,Second_Adress,Second_Zipcode,Seconde_Residence,Contactperson,Initials,Telephone_number,Second_Telephone_Number,Fax_number,Email) values (@CustomerName,@Adress,@Zipcode,@Residence,@Second_Adress,@Second_Zipcode,@Seconde_Residence,@Contactperson,@Initials,@Telephone_number,@Second_Telephone_Number,@Fax_number,@Email)";
-            SqlCommand cmd = new SqlCommand(sql, conn.GetConnection());
-            cmd.Parameters.Add(new SqlParameter("@CustomerName", txt_customername.Text));
-            cmd.Parameters.Add(new SqlParameter("@Adress", txt_adress.Text));
-            cmd.Parameters.Add(new SqlParameter("@Zipcode", txt_zipcode.Text));
-            cmd.Parameters.Add(new SqlParameter("@Residence", txt_residence.Text));
-            cmd.Parameters.Add(new SqlParameter("@Second_Adress", txt_secondadress.Text));
-            cmd.Parameters.Add(new SqlParameter("@Second_Zipcode", txt_secondzipcode.Text));
-            cmd.Parameters.Add(new SqlParameter("@Seconde_Residence", txt_secondresidence.Text));
-            cmd.Parameters.Add(new SqlParameter("@Contactperson", txt_contactperson.Text));
-            cmd.Parameters.Add(new SqlParameter("@Initials", txt_initials.Text));
-            cmd.Parameters.Add(new SqlParameter("@Telephone_number", txt_telephonenumber.Text));
-            cmd.Parameters.Add(new SqlParameter("@Second_Telephone_Number", txt_secondtelephonenumber.Text));
-            cmd.Parameters.Add(new SqlParameter("@Fax_number", txt_faxnumber.Text));
-            cmd.Parameters.Add(new SqlParameter("@Email", txt_email.Text));
-   
-            cmd.Connection.Open();
-            cmd.ExecuteNonQuery();
-            cmd.Connection.Close();
-            
-            conn.OpenConnection();
+            Regex rx = new Regex("^[a-zA-Z0-9]{1,20}@[a-zA-Z0-9]{1,7}.[a-zA-Z]{2,3}$");
+            Regex rex = new Regex("^[1-9]{1}[0-9]{3}[A-Z]{2}$");
+            if(!rx.IsMatch(txt_email.Text) || !rex.IsMatch(txt_zipcode.Text))
+            {
+                MessageBox.Show("not succed");
+            }
+            else
+            {
+                //AreFieldsValid.FieldsValid();
+                string sql = "INSERT INTO Customer(CustomerName,Adress,Zipcode,Residence,Second_Adress,Second_Zipcode,Seconde_Residence,Contactperson,Initials,Telephone_number,Second_Telephone_Number,Fax_number,Email) values (@CustomerName,@Adress,@Zipcode,@Residence,@Second_Adress,@Second_Zipcode,@Seconde_Residence,@Contactperson,@Initials,@Telephone_number,@Second_Telephone_Number,@Fax_number,@Email)";
+                SqlCommand cmd = new SqlCommand(sql, conn.GetConnection());
+                cmd.Parameters.Add(new SqlParameter("@CustomerName", txt_customername.Text));
+                cmd.Parameters.Add(new SqlParameter("@Adress", txt_adress.Text));
+                cmd.Parameters.Add(new SqlParameter("@Zipcode", txt_zipcode.Text));
+                cmd.Parameters.Add(new SqlParameter("@Residence", txt_residence.Text));
+                cmd.Parameters.Add(new SqlParameter("@Second_Adress", txt_secondadress.Text));
+                cmd.Parameters.Add(new SqlParameter("@Second_Zipcode", txt_secondzipcode.Text));
+                cmd.Parameters.Add(new SqlParameter("@Seconde_Residence", txt_secondresidence.Text));
+                cmd.Parameters.Add(new SqlParameter("@Contactperson", txt_contactperson.Text));
+                cmd.Parameters.Add(new SqlParameter("@Initials", txt_initials.Text));
+                cmd.Parameters.Add(new SqlParameter("@Telephone_number", txt_telephonenumber.Text));
+                cmd.Parameters.Add(new SqlParameter("@Second_Telephone_Number", txt_secondtelephonenumber.Text));
+                cmd.Parameters.Add(new SqlParameter("@Fax_number", txt_faxnumber.Text));
+                cmd.Parameters.Add(new SqlParameter("@Email", txt_email.Text));
 
-            SqlDataAdapter SQLda = new SqlDataAdapter("SELECT Customer_ID,CustomerName,Adress,Zipcode,Residence,Second_Adress,Second_Zipcode,Seconde_Residence,Contactperson,Initials,Telephone_number,Second_Telephone_Number,Fax_number,Email FROM Customer", conn.GetConnection());
+                cmd.Connection.Open();
+                cmd.ExecuteNonQuery();
+                cmd.Connection.Close();
 
-            DataTable dt = new DataTable();
-            SQLda.Fill(dt);
+                conn.OpenConnection();
 
-            Customer_grid.DataSource = dt;
-            conn.CloseConnection();
+                SqlDataAdapter SQLda = new SqlDataAdapter("SELECT Customer_ID,CustomerName,Adress,Zipcode,Residence,Second_Adress,Second_Zipcode,Seconde_Residence,Contactperson,Initials,Telephone_number,Second_Telephone_Number,Fax_number,Email FROM Customer", conn.GetConnection());
+
+                DataTable dt = new DataTable();
+                SQLda.Fill(dt);
+
+                Customer_grid.DataSource = dt;
+                conn.CloseConnection();
+            }
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

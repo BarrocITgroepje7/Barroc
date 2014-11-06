@@ -545,7 +545,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(580, 262);
+            this.ClientSize = new System.Drawing.Size(1143, 262);
             this.Controls.Add(this.email_lbl);
             this.Controls.Add(this.faxnumber_lbl);
             this.Controls.Add(this.secondtelephonenumber_lbl);
