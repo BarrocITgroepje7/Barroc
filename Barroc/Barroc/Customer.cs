@@ -95,14 +95,14 @@ namespace Barroc
 
         private void btn_add_Click(object sender, EventArgs e)
         {
-            this.Size = new Size(1286, 315);
+            this.Size = new Size(1286, 329);
             btn_add.Visible = false;
             btn_back.Visible = true;
         }
 
         private void btn_back_Click(object sender, EventArgs e)
         {
-            this.Size = new Size(594, 315);
+            this.Size = new Size(594, 329);
             btn_add.Visible = true;
             btn_back.Visible = false;
         }

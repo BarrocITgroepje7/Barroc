@@ -144,6 +144,7 @@
             this.faxnumber_txt.Name = "faxnumber_txt";
             this.faxnumber_txt.Size = new System.Drawing.Size(135, 20);
             this.faxnumber_txt.TabIndex = 37;
+            this.faxnumber_txt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.faxnumber_txt_KeyPress);
             // 
             // tele_txt
             // 
@@ -151,6 +152,7 @@
             this.tele_txt.Name = "tele_txt";
             this.tele_txt.Size = new System.Drawing.Size(135, 20);
             this.tele_txt.TabIndex = 36;
+            this.tele_txt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tele_txt_KeyPress);
             // 
             // Residence
             // 
@@ -158,6 +160,7 @@
             this.Residence.Name = "Residence";
             this.Residence.Size = new System.Drawing.Size(135, 20);
             this.Residence.TabIndex = 35;
+            this.Residence.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Residence_KeyPress);
             // 
             // Zipcode_txt
             // 
@@ -179,6 +182,7 @@
             this.CustomerName_txt.Name = "CustomerName_txt";
             this.CustomerName_txt.Size = new System.Drawing.Size(135, 20);
             this.CustomerName_txt.TabIndex = 32;
+            this.CustomerName_txt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CustomerName_txt_KeyPress);
             // 
             // txt_secondzipcode
             // 
@@ -219,6 +223,7 @@
             this.txt_secondresidence.Name = "txt_secondresidence";
             this.txt_secondresidence.Size = new System.Drawing.Size(135, 20);
             this.txt_secondresidence.TabIndex = 62;
+            this.txt_secondresidence.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_secondresidence_KeyPress);
             // 
             // txt_contactperson
             // 
@@ -226,6 +231,7 @@
             this.txt_contactperson.Name = "txt_contactperson";
             this.txt_contactperson.Size = new System.Drawing.Size(135, 20);
             this.txt_contactperson.TabIndex = 61;
+            this.txt_contactperson.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_contactperson_KeyPress);
             // 
             // txt_initials
             // 
@@ -233,6 +239,7 @@
             this.txt_initials.Name = "txt_initials";
             this.txt_initials.Size = new System.Drawing.Size(135, 20);
             this.txt_initials.TabIndex = 60;
+            this.txt_initials.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_initials_KeyPress);
             // 
             // txt_secondtelephonenumber
             // 
@@ -240,6 +247,7 @@
             this.txt_secondtelephonenumber.Name = "txt_secondtelephonenumber";
             this.txt_secondtelephonenumber.Size = new System.Drawing.Size(135, 20);
             this.txt_secondtelephonenumber.TabIndex = 58;
+            this.txt_secondtelephonenumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_secondtelephonenumber_KeyPress);
             // 
             // lbl_initials
             // 

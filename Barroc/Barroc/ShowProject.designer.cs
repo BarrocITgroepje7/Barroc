@@ -161,6 +161,7 @@
             this.txt_customerid.Name = "txt_customerid";
             this.txt_customerid.Size = new System.Drawing.Size(143, 20);
             this.txt_customerid.TabIndex = 19;
+            this.txt_customerid.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_customerid_KeyPress);
             // 
             // txt_projectname
             // 
@@ -168,6 +169,7 @@
             this.txt_projectname.Name = "txt_projectname";
             this.txt_projectname.Size = new System.Drawing.Size(143, 20);
             this.txt_projectname.TabIndex = 21;
+            this.txt_projectname.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_projectname_KeyPress);
             // 
             // txt_status
             // 
@@ -175,6 +177,7 @@
             this.txt_status.Name = "txt_status";
             this.txt_status.Size = new System.Drawing.Size(143, 20);
             this.txt_status.TabIndex = 22;
+            this.txt_status.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_status_KeyPress);
             // 
             // txt_applications
             // 
@@ -182,6 +185,7 @@
             this.txt_applications.Name = "txt_applications";
             this.txt_applications.Size = new System.Drawing.Size(143, 20);
             this.txt_applications.TabIndex = 23;
+            this.txt_applications.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_applications_KeyPress);
             // 
             // txt_hardware
             // 
@@ -189,6 +193,7 @@
             this.txt_hardware.Name = "txt_hardware";
             this.txt_hardware.Size = new System.Drawing.Size(143, 20);
             this.txt_hardware.TabIndex = 24;
+            this.txt_hardware.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_hardware_KeyPress);
             // 
             // txt_software
             // 
@@ -196,6 +201,7 @@
             this.txt_software.Name = "txt_software";
             this.txt_software.Size = new System.Drawing.Size(143, 20);
             this.txt_software.TabIndex = 25;
+            this.txt_software.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_software_KeyPress);
             // 
             // txt_offernumber
             // 
@@ -203,6 +209,7 @@
             this.txt_offernumber.Name = "txt_offernumber";
             this.txt_offernumber.Size = new System.Drawing.Size(143, 20);
             this.txt_offernumber.TabIndex = 26;
+            this.txt_offernumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_offernumber_KeyPress);
             // 
             // txt_internalcontactperson
             // 
@@ -210,6 +217,7 @@
             this.txt_internalcontactperson.Name = "txt_internalcontactperson";
             this.txt_internalcontactperson.Size = new System.Drawing.Size(143, 20);
             this.txt_internalcontactperson.TabIndex = 27;
+            this.txt_internalcontactperson.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_internalcontactperson_KeyPress);
             // 
             // txt_numberofinvoices
             // 
@@ -217,6 +225,7 @@
             this.txt_numberofinvoices.Name = "txt_numberofinvoices";
             this.txt_numberofinvoices.Size = new System.Drawing.Size(143, 20);
             this.txt_numberofinvoices.TabIndex = 30;
+            this.txt_numberofinvoices.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_numberofinvoices_KeyPress);
             // 
             // btn_save
             // 

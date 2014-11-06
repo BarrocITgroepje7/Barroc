@@ -46,7 +46,7 @@ namespace Barroc
 
         private void add_btn_Click(object sender, EventArgs e)
         {
-            this.Size = new Size(1237, 301);
+            this.Size = new Size(1237, 360);
             add_btn.Visible = false;
             back_btn.Visible = true;
         }
@@ -55,7 +55,7 @@ namespace Barroc
         {
             back_btn.Visible = false;
             add_btn.Visible = true;
-            this.Size = new Size(650, 300);
+            this.Size = new Size(650, 360);
         }
 
         private void btn_toevoegen_Click(object sender, EventArgs e)

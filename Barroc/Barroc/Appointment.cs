@@ -120,5 +120,10 @@ namespace Barroc
             Appointment_grid.DataSource = dt;
             conn.CloseConnection();
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            label8.Visible = false;
+        }
     }
 }

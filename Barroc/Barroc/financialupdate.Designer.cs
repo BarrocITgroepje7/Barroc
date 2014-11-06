@@ -57,9 +57,9 @@
             // 
             // Back
             // 
-            this.Back.Location = new System.Drawing.Point(24, 250);
+            this.Back.Location = new System.Drawing.Point(12, 243);
             this.Back.Name = "Back";
-            this.Back.Size = new System.Drawing.Size(75, 23);
+            this.Back.Size = new System.Drawing.Size(95, 37);
             this.Back.TabIndex = 5;
             this.Back.Text = "Back";
             this.Back.UseVisualStyleBackColor = true;
@@ -250,9 +250,9 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(771, 250);
+            this.button1.Location = new System.Drawing.Point(771, 243);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 23);
+            this.button1.Size = new System.Drawing.Size(95, 37);
             this.button1.TabIndex = 65;
             this.button1.Text = "Update";
             this.button1.UseVisualStyleBackColor = true;

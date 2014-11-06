@@ -189,9 +189,9 @@
             // 
             // ADD_btn
             // 
-            this.ADD_btn.Location = new System.Drawing.Point(320, 344);
+            this.ADD_btn.Location = new System.Drawing.Point(300, 344);
             this.ADD_btn.Name = "ADD_btn";
-            this.ADD_btn.Size = new System.Drawing.Size(75, 23);
+            this.ADD_btn.Size = new System.Drawing.Size(95, 37);
             this.ADD_btn.TabIndex = 20;
             this.ADD_btn.Text = "Save";
             this.ADD_btn.UseVisualStyleBackColor = true;
@@ -210,7 +210,7 @@
             // 
             this.button1.Location = new System.Drawing.Point(12, 344);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(95, 37);
             this.button1.TabIndex = 25;
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = true;

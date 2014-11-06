@@ -72,6 +72,7 @@
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Project_grid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,7 +89,7 @@
             // 
             // btn_back
             // 
-            this.btn_back.Location = new System.Drawing.Point(12, 238);
+            this.btn_back.Location = new System.Drawing.Point(12, 272);
             this.btn_back.Name = "btn_back";
             this.btn_back.Size = new System.Drawing.Size(95, 37);
             this.btn_back.TabIndex = 1;
@@ -98,7 +99,7 @@
             // 
             // btn_delete
             // 
-            this.btn_delete.Location = new System.Drawing.Point(470, 238);
+            this.btn_delete.Location = new System.Drawing.Point(470, 272);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.Size = new System.Drawing.Size(95, 37);
             this.btn_delete.TabIndex = 2;
@@ -502,12 +503,22 @@
             this.comboBox1.TabIndex = 47;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(15, 239);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(177, 13);
+            this.label3.TabIndex = 48;
+            this.label3.Text = "* Double click to change the project";
+            // 
             // Project
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(1197, 276);
+            this.ClientSize = new System.Drawing.Size(634, 321);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dateTimePicker2);
@@ -607,5 +618,6 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label3;
     }
 }

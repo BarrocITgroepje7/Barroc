@@ -46,6 +46,8 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Appointment_grid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -107,21 +109,21 @@
             // 
             this.Subject_txt.Location = new System.Drawing.Point(725, 141);
             this.Subject_txt.Name = "Subject_txt";
-            this.Subject_txt.Size = new System.Drawing.Size(100, 20);
+            this.Subject_txt.Size = new System.Drawing.Size(159, 20);
             this.Subject_txt.TabIndex = 24;
             // 
             // Customer_txt
             // 
             this.Customer_txt.Location = new System.Drawing.Point(725, 37);
             this.Customer_txt.Name = "Customer_txt";
-            this.Customer_txt.Size = new System.Drawing.Size(100, 20);
+            this.Customer_txt.Size = new System.Drawing.Size(159, 20);
             this.Customer_txt.TabIndex = 20;
             // 
             // Appointment_txt
             // 
             this.Appointment_txt.Location = new System.Drawing.Point(725, 11);
             this.Appointment_txt.Name = "Appointment_txt";
-            this.Appointment_txt.Size = new System.Drawing.Size(100, 20);
+            this.Appointment_txt.Size = new System.Drawing.Size(159, 20);
             this.Appointment_txt.TabIndex = 19;
             // 
             // button1
@@ -213,12 +215,35 @@
             this.dateTimePicker3.Size = new System.Drawing.Size(102, 20);
             this.dateTimePicker3.TabIndex = 36;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(13, 194);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(204, 13);
+            this.label7.TabIndex = 37;
+            this.label7.Text = "* Double click to change the Appointment";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.SystemColors.Window;
+            this.label8.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.label8.Location = new System.Drawing.Point(733, 144);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(141, 13);
+            this.label8.TabIndex = 38;
+            this.label8.Text = "Where for the appontment is";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
+            // 
             // Appointment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(636, 262);
+            this.ClientSize = new System.Drawing.Size(635, 262);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.dateTimePicker3);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
@@ -266,5 +291,7 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }

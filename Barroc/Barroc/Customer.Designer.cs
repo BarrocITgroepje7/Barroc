@@ -76,6 +76,7 @@
             this.secondtelephonenumber_lbl = new System.Windows.Forms.Label();
             this.faxnumber_lbl = new System.Windows.Forms.Label();
             this.email_lbl = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Customer_grid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,7 +92,7 @@
             // 
             // btn_invisible
             // 
-            this.btn_invisible.Location = new System.Drawing.Point(387, 223);
+            this.btn_invisible.Location = new System.Drawing.Point(387, 241);
             this.btn_invisible.Name = "btn_invisible";
             this.btn_invisible.Size = new System.Drawing.Size(95, 37);
             this.btn_invisible.TabIndex = 2;
@@ -121,7 +122,7 @@
             // 
             // back_btn
             // 
-            this.back_btn.Location = new System.Drawing.Point(12, 223);
+            this.back_btn.Location = new System.Drawing.Point(12, 241);
             this.back_btn.Name = "back_btn";
             this.back_btn.Size = new System.Drawing.Size(95, 37);
             this.back_btn.TabIndex = 5;
@@ -540,12 +541,22 @@
             this.email_lbl.Text = "iemand@hotmail.com";
             this.email_lbl.Click += new System.EventHandler(this.email_lbl_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(15, 222);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(178, 13);
+            this.label4.TabIndex = 52;
+            this.label4.Text = "- Double click to change a customer";
+            // 
             // Customer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(1143, 262);
+            this.ClientSize = new System.Drawing.Size(578, 290);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.email_lbl);
             this.Controls.Add(this.faxnumber_lbl);
             this.Controls.Add(this.secondtelephonenumber_lbl);
@@ -654,6 +665,7 @@
         private System.Windows.Forms.Label secondtelephonenumber_lbl;
         private System.Windows.Forms.Label faxnumber_lbl;
         private System.Windows.Forms.Label email_lbl;
+        private System.Windows.Forms.Label label4;
 
     }
 }
