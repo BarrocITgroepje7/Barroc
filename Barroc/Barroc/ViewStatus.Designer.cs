@@ -59,6 +59,7 @@
             this.ClientSize = new System.Drawing.Size(634, 268);
             this.Controls.Add(this.viewstatus_grid);
             this.Controls.Add(this.btn_back);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Viewstatus";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Viewstatus";

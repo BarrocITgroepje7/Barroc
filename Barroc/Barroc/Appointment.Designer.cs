@@ -242,6 +242,7 @@
             this.Controls.Add(this.Add_btn);
             this.Controls.Add(this.Appointment_grid);
             this.Controls.Add(this.back_btn);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Appointment";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Appointment";

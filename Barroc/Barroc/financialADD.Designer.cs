@@ -323,6 +323,7 @@
             this.Controls.Add(this.bankcode);
             this.Controls.Add(this.limit);
             this.Controls.Add(this.Balance);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "financialADD";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "financialADD";

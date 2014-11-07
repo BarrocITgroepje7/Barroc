@@ -59,6 +59,7 @@
             this.ClientSize = new System.Drawing.Size(696, 262);
             this.Controls.Add(this.viewcustomer_grid);
             this.Controls.Add(this.btn_back);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "vieuwcustomerFinance";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Vieuw Customer";

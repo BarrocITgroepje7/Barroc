@@ -96,6 +96,7 @@
             this.Controls.Add(this.Managecustomer_btn);
             this.Controls.Add(this.Logout_btn);
             this.Controls.Add(this.Welkom_lbl);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Sales";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sales";

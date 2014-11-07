@@ -60,6 +60,7 @@
             this.ClientSize = new System.Drawing.Size(685, 266);
             this.Controls.Add(this.viewcustomer_grid);
             this.Controls.Add(this.btn_back);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Viewcustomer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Viewcustomer";

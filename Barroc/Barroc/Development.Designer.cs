@@ -113,6 +113,7 @@
             this.Controls.Add(this.btn_AddProject);
             this.Controls.Add(this.lbl_WelcomeDev);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Development";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Development";

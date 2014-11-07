@@ -605,6 +605,7 @@
             this.Controls.Add(this.btn_invisible);
             this.Controls.Add(this.Customer_grid);
             this.Controls.Add(this.btn_back);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Customer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Customer";

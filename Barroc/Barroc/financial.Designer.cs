@@ -73,6 +73,7 @@
             this.Controls.Add(this.Back);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.financialgrid);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "financial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "financial";

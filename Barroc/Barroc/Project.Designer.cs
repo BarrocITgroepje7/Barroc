@@ -529,6 +529,7 @@
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.Project_grid);
             this.Controls.Add(this.back_btn);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Project";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Project";

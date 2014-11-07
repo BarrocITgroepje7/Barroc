@@ -60,6 +60,7 @@
             this.ClientSize = new System.Drawing.Size(632, 261);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.viewporject_grid);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Viewproject";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Viewproject";
