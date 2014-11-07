@@ -546,9 +546,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(15, 222);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(178, 13);
+            this.label4.Size = new System.Drawing.Size(179, 13);
             this.label4.TabIndex = 52;
-            this.label4.Text = "- Double click to change a customer";
+            this.label4.Text = "* Double click to change a customer";
             // 
             // Customer
             // 

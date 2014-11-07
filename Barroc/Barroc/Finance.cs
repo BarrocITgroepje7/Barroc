@@ -41,7 +41,7 @@ namespace Barroc
         {
             vieuwcustomerFinance vieuwcustomerfinance = new vieuwcustomerFinance();
             vieuwcustomerfinance.Show();
-            this.Show();
+            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
