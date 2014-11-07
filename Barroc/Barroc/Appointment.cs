@@ -16,6 +16,7 @@ namespace Barroc
     {
         ConnectionManager conn = new ConnectionManager();
         showappointment showappointment;
+        sure sures;
         public Appointment(ConnectionManager conn)
         {
             InitializeComponent();
@@ -39,16 +40,15 @@ namespace Barroc
 
         private void Add_btn_Click(object sender, EventArgs e)
         {
-            this.Size = new Size(860, 315);
+            this.Size = new Size(929, 315);
             Add_btn.Visible = false;
             back_btn.Visible = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string sql = "INSERT INTO Appointments (Appointments_ID, Customer_ID, Date_of_Action, Last_contact, Next_Action, Subject) values (@APPOINTMENT_ID,@CUSTOMER_ID,@DATE_OF_ACTION,@LAST_CONTACT,@NEXT_ACTION,@SUBJECT)";
+            string sql = "INSERT INTO Appointments (Customer_ID, Date_of_Action, Last_contact, Next_Action, Subject) values (@CUSTOMER_ID,@DATE_OF_ACTION,@LAST_CONTACT,@NEXT_ACTION,@SUBJECT)";
             SqlCommand cmd = new SqlCommand(sql, conn.GetConnection());
-            cmd.Parameters.Add(new SqlParameter("@APPOINTMENT_ID", Appointment_txt.Text));
             cmd.Parameters.Add(new SqlParameter("@CUSTOMER_ID", Customer_txt.Text));
             cmd.Parameters.Add(new SqlParameter("@DATE_OF_ACTION", this.dateTimePicker1.Text));
             cmd.Parameters.Add(new SqlParameter("@LAST_CONTACT", this.dateTimePicker2.Text));
@@ -104,21 +104,31 @@ namespace Barroc
 
         private void btn_delete_Click(object sender, EventArgs e)
         {
-            DataGridViewRow row = Appointment_grid.SelectedRows[0];
-            string id = row.Cells[0].Value.ToString();
+            sures = new sure();
+            DialogResult dialog = sures.ShowDialog();
 
-            SqlCommand SQLda = new SqlCommand("DELETE FROM Appointments WHERE Appointments_id=" + id, conn.GetConnection());
-            SQLda.Connection.Open();
-            SQLda.ExecuteNonQuery();
-            SQLda.Connection.Close();
+            if (dialog == DialogResult.OK)
+            {
+                DataGridViewRow row = Appointment_grid.SelectedRows[0];
+                string id = row.Cells[0].Value.ToString();
 
-            SqlDataAdapter SQLs = new SqlDataAdapter("SELECT Appointments_id, Customer_id, Date_of_Action, Last_contact, Next_Action, Subject FROM Appointments", conn.GetConnection());
+                SqlCommand SQLda = new SqlCommand("DELETE FROM Appointments WHERE Appointments_id=" + id, conn.GetConnection());
+                SQLda.Connection.Open();
+                SQLda.ExecuteNonQuery();
+                SQLda.Connection.Close();
 
-            DataTable dt = new DataTable();
-            SQLs.Fill(dt);
+                SqlDataAdapter SQLs = new SqlDataAdapter("SELECT Appointments_id, Customer_id, Date_of_Action, Last_contact, Next_Action, Subject FROM Appointments", conn.GetConnection());
 
-            Appointment_grid.DataSource = dt;
-            conn.CloseConnection();
+                DataTable dt = new DataTable();
+                SQLs.Fill(dt);
+
+                Appointment_grid.DataSource = dt;
+                conn.CloseConnection();
+            }
+            else if (dialog == DialogResult.Cancel)
+            {
+                sures.Close();
+            }
         }
 
         private void label8_Click(object sender, EventArgs e)

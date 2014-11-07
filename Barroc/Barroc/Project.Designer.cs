@@ -33,7 +33,6 @@
             this.btn_delete = new System.Windows.Forms.Button();
             this.back_btn = new System.Windows.Forms.Button();
             this.add_btn = new System.Windows.Forms.Button();
-            this.lbl_projectid = new System.Windows.Forms.Label();
             this.lbl_customerid = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -45,7 +44,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.txt_projectid = new System.Windows.Forms.TextBox();
             this.txt_customerid = new System.Windows.Forms.TextBox();
             this.txt_projectname = new System.Windows.Forms.TextBox();
             this.txt_status = new System.Windows.Forms.TextBox();
@@ -58,7 +56,6 @@
             this.btn_toevoegen = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.projectid_lbl = new System.Windows.Forms.Label();
             this.customerid_lbl = new System.Windows.Forms.Label();
             this.projectname_lbl = new System.Windows.Forms.Label();
             this.status_lbl = new System.Windows.Forms.Label();
@@ -105,6 +102,7 @@
             this.btn_delete.TabIndex = 2;
             this.btn_delete.Text = "Delete";
             this.btn_delete.UseVisualStyleBackColor = true;
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
             // back_btn
             // 
@@ -126,19 +124,10 @@
             this.add_btn.UseVisualStyleBackColor = true;
             this.add_btn.Click += new System.EventHandler(this.add_btn_Click);
             // 
-            // lbl_projectid
-            // 
-            this.lbl_projectid.AutoSize = true;
-            this.lbl_projectid.Location = new System.Drawing.Point(703, 12);
-            this.lbl_projectid.Name = "lbl_projectid";
-            this.lbl_projectid.Size = new System.Drawing.Size(54, 13);
-            this.lbl_projectid.TabIndex = 5;
-            this.lbl_projectid.Text = "Project ID";
-            // 
             // lbl_customerid
             // 
             this.lbl_customerid.AutoSize = true;
-            this.lbl_customerid.Location = new System.Drawing.Point(692, 42);
+            this.lbl_customerid.Location = new System.Drawing.Point(695, 15);
             this.lbl_customerid.Name = "lbl_customerid";
             this.lbl_customerid.Size = new System.Drawing.Size(65, 13);
             this.lbl_customerid.TabIndex = 6;
@@ -147,7 +136,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(686, 96);
+            this.label4.Location = new System.Drawing.Point(689, 69);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 13);
             this.label4.TabIndex = 8;
@@ -156,7 +145,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(720, 127);
+            this.label5.Location = new System.Drawing.Point(723, 100);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(37, 13);
             this.label5.TabIndex = 9;
@@ -165,7 +154,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(693, 158);
+            this.label6.Location = new System.Drawing.Point(696, 131);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(64, 13);
             this.label6.TabIndex = 10;
@@ -174,7 +163,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(704, 184);
+            this.label7.Location = new System.Drawing.Point(707, 157);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(53, 13);
             this.label7.TabIndex = 11;
@@ -234,17 +223,9 @@
             this.label13.TabIndex = 17;
             this.label13.Text = "Number of Invoices";
             // 
-            // txt_projectid
-            // 
-            this.txt_projectid.Location = new System.Drawing.Point(766, 9);
-            this.txt_projectid.Name = "txt_projectid";
-            this.txt_projectid.Size = new System.Drawing.Size(143, 20);
-            this.txt_projectid.TabIndex = 18;
-            this.txt_projectid.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_projectid_KeyPress);
-            // 
             // txt_customerid
             // 
-            this.txt_customerid.Location = new System.Drawing.Point(766, 39);
+            this.txt_customerid.Location = new System.Drawing.Point(769, 12);
             this.txt_customerid.Name = "txt_customerid";
             this.txt_customerid.Size = new System.Drawing.Size(143, 20);
             this.txt_customerid.TabIndex = 19;
@@ -252,7 +233,7 @@
             // 
             // txt_projectname
             // 
-            this.txt_projectname.Location = new System.Drawing.Point(766, 93);
+            this.txt_projectname.Location = new System.Drawing.Point(769, 66);
             this.txt_projectname.Name = "txt_projectname";
             this.txt_projectname.Size = new System.Drawing.Size(143, 20);
             this.txt_projectname.TabIndex = 21;
@@ -260,7 +241,7 @@
             // 
             // txt_status
             // 
-            this.txt_status.Location = new System.Drawing.Point(766, 124);
+            this.txt_status.Location = new System.Drawing.Point(769, 97);
             this.txt_status.Name = "txt_status";
             this.txt_status.Size = new System.Drawing.Size(143, 20);
             this.txt_status.TabIndex = 22;
@@ -268,7 +249,7 @@
             // 
             // txt_applications
             // 
-            this.txt_applications.Location = new System.Drawing.Point(766, 155);
+            this.txt_applications.Location = new System.Drawing.Point(769, 128);
             this.txt_applications.Name = "txt_applications";
             this.txt_applications.Size = new System.Drawing.Size(143, 20);
             this.txt_applications.TabIndex = 23;
@@ -276,7 +257,7 @@
             // 
             // txt_hardware
             // 
-            this.txt_hardware.Location = new System.Drawing.Point(766, 181);
+            this.txt_hardware.Location = new System.Drawing.Point(769, 154);
             this.txt_hardware.Name = "txt_hardware";
             this.txt_hardware.Size = new System.Drawing.Size(143, 20);
             this.txt_hardware.TabIndex = 24;
@@ -342,24 +323,12 @@
             this.label1.TabIndex = 33;
             this.label1.Text = "* Search";
             // 
-            // projectid_lbl
-            // 
-            this.projectid_lbl.AutoSize = true;
-            this.projectid_lbl.BackColor = System.Drawing.SystemColors.Window;
-            this.projectid_lbl.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.projectid_lbl.Location = new System.Drawing.Point(773, 12);
-            this.projectid_lbl.Name = "projectid_lbl";
-            this.projectid_lbl.Size = new System.Drawing.Size(13, 13);
-            this.projectid_lbl.TabIndex = 34;
-            this.projectid_lbl.Text = "1";
-            this.projectid_lbl.Click += new System.EventHandler(this.projectid_lbl_Click);
-            // 
             // customerid_lbl
             // 
             this.customerid_lbl.AutoSize = true;
             this.customerid_lbl.BackColor = System.Drawing.SystemColors.Window;
             this.customerid_lbl.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.customerid_lbl.Location = new System.Drawing.Point(773, 42);
+            this.customerid_lbl.Location = new System.Drawing.Point(776, 15);
             this.customerid_lbl.Name = "customerid_lbl";
             this.customerid_lbl.Size = new System.Drawing.Size(13, 13);
             this.customerid_lbl.TabIndex = 35;
@@ -371,7 +340,7 @@
             this.projectname_lbl.AutoSize = true;
             this.projectname_lbl.BackColor = System.Drawing.SystemColors.Window;
             this.projectname_lbl.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.projectname_lbl.Location = new System.Drawing.Point(773, 96);
+            this.projectname_lbl.Location = new System.Drawing.Point(776, 69);
             this.projectname_lbl.Name = "projectname_lbl";
             this.projectname_lbl.Size = new System.Drawing.Size(69, 13);
             this.projectname_lbl.TabIndex = 36;
@@ -383,7 +352,7 @@
             this.status_lbl.AutoSize = true;
             this.status_lbl.BackColor = System.Drawing.SystemColors.Window;
             this.status_lbl.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.status_lbl.Location = new System.Drawing.Point(773, 127);
+            this.status_lbl.Location = new System.Drawing.Point(776, 100);
             this.status_lbl.Name = "status_lbl";
             this.status_lbl.Size = new System.Drawing.Size(38, 13);
             this.status_lbl.TabIndex = 37;
@@ -395,7 +364,7 @@
             this.applications_lbl.AutoSize = true;
             this.applications_lbl.BackColor = System.Drawing.SystemColors.Window;
             this.applications_lbl.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.applications_lbl.Location = new System.Drawing.Point(773, 158);
+            this.applications_lbl.Location = new System.Drawing.Point(776, 131);
             this.applications_lbl.Name = "applications_lbl";
             this.applications_lbl.Size = new System.Drawing.Size(92, 13);
             this.applications_lbl.TabIndex = 38;
@@ -407,7 +376,7 @@
             this.hardware_lbl.AutoSize = true;
             this.hardware_lbl.BackColor = System.Drawing.SystemColors.Window;
             this.hardware_lbl.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.hardware_lbl.Location = new System.Drawing.Point(773, 184);
+            this.hardware_lbl.Location = new System.Drawing.Point(776, 157);
             this.hardware_lbl.Name = "hardware_lbl";
             this.hardware_lbl.Size = new System.Drawing.Size(38, 13);
             this.hardware_lbl.TabIndex = 39;
@@ -487,7 +456,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(645, 74);
+            this.label2.Location = new System.Drawing.Point(648, 47);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(112, 13);
             this.label2.TabIndex = 46;
@@ -497,7 +466,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(766, 66);
+            this.comboBox1.Location = new System.Drawing.Point(769, 39);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(143, 21);
             this.comboBox1.TabIndex = 47;
@@ -517,7 +486,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(634, 321);
+            this.ClientSize = new System.Drawing.Size(641, 321);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label2);
@@ -532,7 +501,6 @@
             this.Controls.Add(this.status_lbl);
             this.Controls.Add(this.projectname_lbl);
             this.Controls.Add(this.customerid_lbl);
-            this.Controls.Add(this.projectid_lbl);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btn_toevoegen);
@@ -545,7 +513,6 @@
             this.Controls.Add(this.txt_status);
             this.Controls.Add(this.txt_projectname);
             this.Controls.Add(this.txt_customerid);
-            this.Controls.Add(this.txt_projectid);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
@@ -557,7 +524,6 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lbl_customerid);
-            this.Controls.Add(this.lbl_projectid);
             this.Controls.Add(this.add_btn);
             this.Controls.Add(this.btn_delete);
             this.Controls.Add(this.btn_back);
@@ -579,7 +545,6 @@
         private System.Windows.Forms.Button btn_delete;
         private System.Windows.Forms.Button back_btn;
         private System.Windows.Forms.Button add_btn;
-        private System.Windows.Forms.Label lbl_projectid;
         private System.Windows.Forms.Label lbl_customerid;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
@@ -591,7 +556,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox txt_projectid;
         private System.Windows.Forms.TextBox txt_customerid;
         private System.Windows.Forms.TextBox txt_projectname;
         private System.Windows.Forms.TextBox txt_status;
@@ -604,7 +568,6 @@
         private System.Windows.Forms.Button btn_toevoegen;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label projectid_lbl;
         private System.Windows.Forms.Label customerid_lbl;
         private System.Windows.Forms.Label projectname_lbl;
         private System.Windows.Forms.Label status_lbl;

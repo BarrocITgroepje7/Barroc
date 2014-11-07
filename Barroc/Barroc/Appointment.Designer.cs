@@ -33,10 +33,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.Subject_txt = new System.Windows.Forms.TextBox();
             this.Customer_txt = new System.Windows.Forms.TextBox();
-            this.Appointment_txt = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.Add_btn = new System.Windows.Forms.Button();
             this.Appointment_grid = new System.Windows.Forms.DataGridView();
@@ -96,15 +94,6 @@
             this.label2.TabIndex = 26;
             this.label2.Text = "Customer ID";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(639, 14);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 13);
-            this.label1.TabIndex = 25;
-            this.label1.Text = "Appointment ID";
-            // 
             // Subject_txt
             // 
             this.Subject_txt.Location = new System.Drawing.Point(725, 141);
@@ -119,18 +108,11 @@
             this.Customer_txt.Size = new System.Drawing.Size(159, 20);
             this.Customer_txt.TabIndex = 20;
             // 
-            // Appointment_txt
-            // 
-            this.Appointment_txt.Location = new System.Drawing.Point(725, 11);
-            this.Appointment_txt.Name = "Appointment_txt";
-            this.Appointment_txt.Size = new System.Drawing.Size(159, 20);
-            this.Appointment_txt.TabIndex = 19;
-            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(723, 232);
+            this.button1.Location = new System.Drawing.Point(725, 213);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(102, 23);
+            this.button1.Size = new System.Drawing.Size(95, 37);
             this.button1.TabIndex = 18;
             this.button1.Text = "Add Appointments";
             this.button1.UseVisualStyleBackColor = true;
@@ -241,7 +223,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(635, 262);
+            this.ClientSize = new System.Drawing.Size(638, 262);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.dateTimePicker3);
@@ -254,10 +236,8 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.Subject_txt);
             this.Controls.Add(this.Customer_txt);
-            this.Controls.Add(this.Appointment_txt);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Add_btn);
             this.Controls.Add(this.Appointment_grid);
@@ -278,10 +258,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox Subject_txt;
         private System.Windows.Forms.TextBox Customer_txt;
-        private System.Windows.Forms.TextBox Appointment_txt;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button Add_btn;
         private System.Windows.Forms.DataGridView Appointment_grid;

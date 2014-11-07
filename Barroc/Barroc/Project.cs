@@ -16,6 +16,7 @@ namespace Barroc
     {
         ConnectionManager conn = new ConnectionManager();
         ShowProject form;
+        sure projectsure;
         public Project(ConnectionManager conn)
         {
             InitializeComponent();
@@ -60,9 +61,8 @@ namespace Barroc
 
         private void btn_toevoegen_Click(object sender, EventArgs e)
         {
-            string sql = "INSERT INTO Projects (Project_ID, Customer_ID, Maintenance_Contract, Project_name, Status, Applications, Hardware, Software, Offer_number, Internal_contact_person, Start_date, End_date, Nmber_of_invoices) values (@Project_ID,@Customer_ID,@Maintenance_Contract,@Project_name,@Status,@Applications,@Hardware,@Software,@Offer_number,@Internal_contact_person,@Start_date,@End_date,@Nmber_of_invoices)";
+            string sql = "INSERT INTO Projects (Customer_ID, Maintenance_Contract, Project_name, Status, Applications, Hardware, Software, Offer_number, Internal_contact_person, Start_date, End_date, Nmber_of_invoices) values (@Customer_ID,@Maintenance_Contract,@Project_name,@Status,@Applications,@Hardware,@Software,@Offer_number,@Internal_contact_person,@Start_date,@End_date,@Nmber_of_invoices)";
             SqlCommand cmd = new SqlCommand(sql, conn.GetConnection());
-            cmd.Parameters.Add(new SqlParameter("@Project_ID", txt_projectid.Text));
             cmd.Parameters.Add(new SqlParameter("@Customer_ID", txt_customerid.Text));
             cmd.Parameters.Add(new SqlParameter("@Maintenance_Contract", comboBox1.Text));
             cmd.Parameters.Add(new SqlParameter("@Project_name", txt_projectname.Text));
@@ -132,7 +132,6 @@ namespace Barroc
 
         private void projectid_lbl_Click(object sender, EventArgs e)
         {
-            projectid_lbl.Visible = false;
         }
 
         private void txt_projectid_KeyPress(object sender, KeyPressEventArgs e)
@@ -253,6 +252,36 @@ namespace Barroc
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_delete_Click(object sender, EventArgs e)
+        {
+            projectsure = new sure();
+            DialogResult dialog = projectsure.ShowDialog();
+            
+            if(dialog == DialogResult.OK)
+            {
+                DataGridViewRow row = Project_grid.SelectedRows[0];
+                string id = row.Cells[0].Value.ToString();
+
+                SqlCommand SQLda = new SqlCommand("DELETE FROM Projects WHERE Project_id=" + id, conn.GetConnection());
+                SQLda.Connection.Open();
+                SQLda.ExecuteNonQuery();
+                SQLda.Connection.Close();
+
+                SqlDataAdapter SQLs = new SqlDataAdapter("SELECT * FROM Projects", conn.GetConnection());
+
+                DataTable dt = new DataTable();
+                SQLs.Fill(dt);
+
+                Project_grid.DataSource = dt;
+                conn.CloseConnection();
+            }
+            else if (dialog == DialogResult.Cancel)
+            {
+                projectsure.Close();
+            }
+            
         }
     }
 }
