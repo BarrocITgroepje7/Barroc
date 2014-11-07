@@ -130,7 +130,7 @@ namespace Barroc
             Regex Rex = new Regex("^[0-9]{2,3}[0-9]{7}$");
             if(!rx.IsMatch(txt_email.Text) || !rex.IsMatch(txt_zipcode.Text) || !Rex.IsMatch(txt_telephonenumber.Text))
             {
-                MessageBox.Show("not succed");
+                MessageBox.Show("The zipcode, telephone number or email in incorrect");
             }
             else
             {
@@ -154,6 +154,8 @@ namespace Barroc
                 cmd.Connection.Open();
                 cmd.ExecuteNonQuery();
                 cmd.Connection.Close();
+
+                MessageBox.Show("You added a customer");
 
                 conn.OpenConnection();
 

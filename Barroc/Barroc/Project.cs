@@ -80,6 +80,8 @@ namespace Barroc
             cmd.ExecuteNonQuery();
             cmd.Connection.Close();
 
+            MessageBox.Show("You added a project");
+
             conn.OpenConnection();
 
             SqlDataAdapter SQLda = new SqlDataAdapter("SELECT * FROM Projects", conn.GetConnection());

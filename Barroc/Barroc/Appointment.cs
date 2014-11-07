@@ -59,6 +59,8 @@ namespace Barroc
             cmd.ExecuteNonQuery();
             cmd.Connection.Close();
 
+            MessageBox.Show("You added a appointment");
+
             conn.OpenConnection();
 
             SqlDataAdapter SQLda = new SqlDataAdapter("SELECT * FROM Appointments", conn.GetConnection());
